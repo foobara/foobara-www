@@ -1,3 +1,31 @@
+:root {
+  --foob-yellow: #fefae0;
+  --foob-brown-light: #dda15e;
+  --foob-brown-dark: #bc6c25;
+  --foob-green-light: #606c38;
+  --foob-green-dark: #283618;
+}
+
+.color1 {
+  background-color: var(--foob-yellow);
+}
+
+.color2 {
+  background-color: var(--foob-brown-light);
+}
+
+.color3 {
+  background-color: var(--foob-brown-dark);
+}
+
+.color4 {
+  background-color: var(--foob-green-light);
+}
+
+.color5 {
+  background-color: var(--foob-green-dark);
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +60,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
