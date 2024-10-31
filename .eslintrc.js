@@ -20,7 +20,7 @@ module.exports = {
             }
         }
     ],
-    parser: '@typescript-eslint/parser',
+    "parser": '@typescript-eslint/parser',
     "parserOptions": {
         "ecmaVersion": "latest",
         project: ['./tsconfig.json'],
@@ -29,9 +29,9 @@ module.exports = {
     "plugins": [
         "react"
     ],
-    settings: {
-        react: {
-            version: "detect"
+    "settings": {
+        "react": {
+            "version": "detect"
         },
     },
     "rules": {
