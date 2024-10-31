@@ -1,28 +1,20 @@
 import React from 'react'
 // import logo from './logo.svg'
-import './App.css'
+import { Routes, Route } from 'react-router-dom'
 
+import './App.css'
+import Colors from './Colors'
 import Header from './Header'
+import Home from './Home'
 
 function App () {
   return (
     <div className="App">
       <Header />
-      <div className="color1">
-        color1
-      </div>
-      <div className="color2">
-        color2
-      </div>
-      <div className="color3">
-        color3
-      </div>
-      <div className="color4">
-        color4
-      </div>
-      <div className="color5">
-        color5
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/colors" element={<Colors />} />
+      </Routes>
     </div>
   )
 }

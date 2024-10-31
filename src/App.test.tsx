@@ -1,10 +1,10 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 import App from './App'
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom'
 
 test('renders learn react link', () => {
   render(<BrowserRouter><App /></BrowserRouter>)
-  const linkElement = screen.getByText(/color1/i)
+  const linkElement = screen.getByText(/Home/i)
   expect(linkElement).toBeInTheDocument()
 })
