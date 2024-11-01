@@ -1,11 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import './Header.css'
+
+const activeClassName = ({ isActive }: { isActive: boolean }) => (isActive ? 'active' : '')
 
 const Header: React.FC = () => (
   <header className="header">
     <nav className="nav">
       <ul>
-        <li><Link to="/">Home</Link></li>
+        <li>
+          <NavLink
+          to="/"
+          end
+          className={activeClassName}>
+          Home
+        </NavLink>
+        </li>
+        <a href="http://github.com/foobara/foobara">GitHub</a>
       </ul>
     </nav>
   </header>

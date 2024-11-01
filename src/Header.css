@@ -1,0 +1,40 @@
+:root {
+  --foob-yellow: #fefae0;
+  --foob-brown-light: #dda15e;
+  --foob-brown-dark: #bc6c25;
+  --foob-green-light: #606c38;
+  --foob-green-dark: #283618;
+}
+
+.header {
+  justify-content: center;
+  display: flex;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  background-color: var(--foob-brown-light);
+}
+
+.nav a:hover {
+  background-color: var(--foob-brown-dark);
+}
+
+.nav a.active {
+  background-color: var(--foob-brown-dark);
+}
