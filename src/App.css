@@ -28,6 +28,7 @@
 
 .App {
   text-align: center;
+  background-color: var(--foob-yellow);
 }
 
 .App-logo {
