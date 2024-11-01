@@ -26,9 +26,12 @@
   background-color: var(--foob-green-dark);
 }
 
+body {
+  background-color: var(--foob-yellow);
+}
+
 .App {
   text-align: center;
-  background-color: var(--foob-yellow);
 }
 
 .App-logo {
