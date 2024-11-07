@@ -13,10 +13,20 @@ const Header: React.FC = () => (
           to="/"
           end
           className={activeClassName}>
-          Home
-        </NavLink>
+            Home
+          </NavLink>
+                  </li>
+        <li>
+          <NavLink
+          to="/docs"
+          end
+          className={activeClassName}>
+            Docs
+          </NavLink>
+                  </li>
+        <li>
+          <a href="http://github.com/foobara/foobara">GitHub</a>
         </li>
-        <a href="http://github.com/foobara/foobara">GitHub</a>
       </ul>
     </nav>
   </header>

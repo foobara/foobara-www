@@ -6,6 +6,7 @@ import './App.css'
 import Colors from './Colors'
 import Header from './Header'
 import Home from './Home'
+import Docs from './Docs'
 
 function App () {
   return (
@@ -13,6 +14,7 @@ function App () {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/docs" element={<Docs />} />
         <Route path="/colors" element={<Colors />} />
       </Routes>
     </div>
