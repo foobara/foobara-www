@@ -15,7 +15,7 @@ function Home () {
       </div>
       <div>
         <h1>A Foobara code demo</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMmDZ1Mr-wM?si=aUmdvIAhcdEN7m8Z"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3_cUiO3cCGg?si=g2pgGY1e6yI4OjnK"
                 title="YouTube video player" frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
