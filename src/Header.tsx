@@ -25,6 +25,14 @@ const Header: React.FC = () => (
           </NavLink>
                   </li>
         <li>
+          <NavLink
+          to="/videos"
+          end
+          className={activeClassName}>
+            Videos
+          </NavLink>
+                  </li>
+        <li>
           <a href="http://github.com/foobara/foobara">GitHub</a>
         </li>
       </ul>
