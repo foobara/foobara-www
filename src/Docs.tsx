@@ -28,13 +28,13 @@ function Docs () {
   return (
     <div className="Docs">
       <div>
-        <h1><a href="https://docs.foobara.com/all">All Foobara project docs in one place</a></h1>
+        <h1>All Foobara gem docs in one place:</h1>
+        (<a href="https://docs.foobara.com/all">All latest gems together</a>)
       </div>
-      <h1>Per-gem docs</h1>
+      <h1>Per-gem docs:</h1>
       {versionData != null && Object.entries(versionData).map(([gemName, versions]) => (
         <div key={gemName}>
-          <h3>{gemName}</h3>
-          ({versions.map((version, index) => {
+          <h3>{gemName} ({versions.map((version, index) => {
             const href: string = `https://docs.foobara.com/gems/${gemName}/${version}`
             const element = <a key={index} href={href}>{version}</a>
             if (index === versions.length - 1) {
@@ -43,6 +43,7 @@ function Docs () {
               return [element, ', ']
             }
           })})
+          </h3>
         </div>
       ))}
       <div>{error != null && JSON.stringify(error)}</div>
