@@ -43,7 +43,6 @@ const Header: React.FC = () => (
         <li>
           <a
             href="http://github.com/foobara/foobara"
-            className="secondary"
             target="_blank"
             rel="noopener noreferrer"
           >
