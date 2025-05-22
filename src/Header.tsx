@@ -18,10 +18,10 @@ const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-          to="/docs"
-          end
-          className={activeClassName}>
-            Docs
+            to="/contact"
+            end
+            className={activeClassName}>
+            Contact
           </NavLink>
         </li>
         <li>
@@ -34,10 +34,10 @@ const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-          to="/contact"
-          end
-          className={activeClassName}>
-            Contact
+            to="/docs"
+            end
+            className={activeClassName}>
+            Docs
           </NavLink>
         </li>
         <li>
