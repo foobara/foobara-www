@@ -5,8 +5,8 @@
 }
 
 .hero-section {
-  padding: 1rem 1rem 3rem;
-  margin-bottom: 3rem;
+  padding: 1rem 1rem 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -27,6 +27,7 @@
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto 2rem;
+  text-align: left;
 }
 
 .hero-cta {
@@ -85,11 +86,13 @@ section h2 {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .feature h3, .benefit-item h3, .tool-item h3 {
   color: var(--foob-brown-dark);
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .feature ul {
