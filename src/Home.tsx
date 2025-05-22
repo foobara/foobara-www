@@ -13,7 +13,7 @@ function Home () {
           <p className="hero-description">
             Foobara helps you encapsulate high-level domain operations in commands and automatically
             expose machine-readable formal metadata about those commands so that integration code
-            can be decoupled and abstracted away.  Write your domain logic once and automatically use it
+            can be decoupled and abstracted away. Write your domain logic once and automatically use it
             via CLI, HTTP, MCP, in AI agents, in async job queues... whatever integration you can think of!
           </p>
           <div className="hero-cta">
@@ -40,9 +40,10 @@ function Home () {
             <ul>
               <li>Encapsulate high-level domain operations</li>
               <li>Serve as the public interface to your systems</li>
-              <li>Organize into Organizations and Domains</li>
             </ul>
           </div>
+
+          <div className="operator">+</div>
 
           <div className="feature">
             <h3>Discoverability</h3>
@@ -52,6 +53,8 @@ function Home () {
               <li>Enable tooling and automation</li>
             </ul>
           </div>
+
+          <div className="operator">=</div>
 
           <div className="feature">
             <h3>Domain Complexity Management</h3>
@@ -64,8 +67,18 @@ function Home () {
         </div>
       </section>
 
+      <section className="diagram-section">
+        <div className="diagram-container">
+          <img
+            src="/cc_plus_discoverable.jpg"
+            alt="Diagram showing how Foobara combines command-centric approach with discoverability"
+            className="diagram-image"
+          />
+        </div>
+      </section>
+
       <section className="benefits-section">
-        <h2>Why Choose Foobara?</h2>
+        <h2>Why Foobara?</h2>
         <div className="benefits-list">
           <div className="benefit-item">
             <h3>Domain Focus</h3>
@@ -74,7 +87,8 @@ function Home () {
 
           <div className="benefit-item">
             <h3>Clear Mental Models</h3>
-            <p>Operate within a specific mental model at a time instead of juggling multiple contexts.</p>
+            <p>Operate within a specific mental model at a time independent of integration concerns.</p>
+            <p>Commands provide a clear mental model of the problem and better communication among the team.</p>
           </div>
 
           <div className="benefit-item">
@@ -85,21 +99,52 @@ function Home () {
       </section>
 
       <section className="tools-section">
-        <h2>Powerful Tools</h2>
+        <h2>Helpful Abstractions</h2>
         <div className="tools-list">
           <div className="tool-item">
+            <h3>Commands</h3>
+            <p>The champion of Foobara! Encapsulate high-level domain operations and expose them in new ways
+              without refactoring your precious domain logic.</p>
+          </div>
+
+          <div className="tool-item">
+            <h3>Organizations & Domains</h3>
+            <p>Organize commands, types, and errors into Domains and Organizations.</p>
+          </div>
+
+          <div className="tool-item">
             <h3>Remote Commands</h3>
-            <p>Call commands across system boundaries with the same interface as local commands.</p>
+            <p>Call commands in Typescript or Ruby across system boundaries with the same interface as local Ruby commands.</p>
           </div>
 
           <div className="tool-item">
             <h3>Domain Mappers</h3>
-            <p>Map concepts between domains to maintain separation of concerns.</p>
+            <p>Map concepts between domains to allow commands to focus on one domain.</p>
+          </div>
+
+          <div className="tool-item">
+            <h3>Custom Types</h3>
+            <p>Create custom data types that other tools and systems can discover.</p>
+          </div>
+
+          <div className="tool-item">
+            <h3>Models & Entities</h3>
+            <p>Define discoverable domain models and entities with persistence and transaction support.</p>
+          </div>
+
+          <div className="tool-item">
+            <h3>Command Connectors</h3>
+            <p>Integrate commands via CLI, HTTP, MCP, async job queues, and whatever else pops up without changing your domain logic or refactoring your code.</p>
+          </div>
+
+          <div className="tool-item">
+            <h3>CRUD Drivers</h3>
+            <p>Store entity records with a consistent interface across multiple data stores.</p>
           </div>
 
           <div className="tool-item">
             <h3>Code Generators</h3>
-            <p>Generate Ruby and TypeScript/React projects with a single command.</p>
+            <p>Generate various Foobara components, and even Ruby and Typescript/React projects from foobara manifest metadata</p>
           </div>
         </div>
       </section>
