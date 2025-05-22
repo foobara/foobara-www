@@ -1,0 +1,144 @@
+.Home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-section {
+  padding: 3rem 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--foob-green-dark);
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--foob-brown-dark);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--foob-green-dark);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--foob-green-light);
+}
+
+.cta-button.secondary {
+  background-color: var(--foob-brown-dark);
+}
+
+.cta-button.secondary:hover {
+  background-color: var(--foob-brown-light);
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--foob-green-dark);
+  font-size: 2rem;
+}
+
+.feature-group, .benefits-list, .tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.feature, .benefit-item, .tool-item {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3, .benefit-item h3, .tool-item h3 {
+  color: var(--foob-brown-dark);
+  margin-bottom: 1rem;
+}
+
+.feature ul {
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.feature li {
+  margin-bottom: 0.5rem;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .feature-group, .benefits-list, .tools-list {
+    flex-direction: column;
+  }
+  
+  .feature, .benefit-item, .tool-item {
+    min-width: auto;
+  }
+  
+  .hero-cta, .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+}
