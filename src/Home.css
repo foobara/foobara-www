@@ -75,6 +75,10 @@ section h2 {
   font-size: 2rem;
 }
 
+.cta-section h2 {
+  margin-bottom: 1.5rem;
+}
+
 .feature-group, .tools-list {
   display: flex;
   flex-wrap: wrap;
@@ -128,10 +132,12 @@ section h2 {
 
 .cta-section {
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto 4rem;
 }
 
 .cta-buttons {
