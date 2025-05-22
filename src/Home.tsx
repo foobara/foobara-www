@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './App.css'
 import './Home.css'
 
@@ -9,25 +8,14 @@ function Home () {
       <section className="hero-section">
         <div className="hero-content">
           <h1>Foobara</h1>
-          <h2>Command-centric Framework for Complex Domains</h2>
+          <h2>A Command-Centric Framework for Complex Domains!</h2>
           <p className="hero-description">
             Foobara helps you encapsulate high-level domain operations in commands and automatically
-            expose machine-readable formal metadata about those commands so that integration code
-            can be decoupled and abstracted away. Write your domain logic once and automatically use it
-            via CLI, HTTP, MCP, in AI agents, in async job queues... whatever integration you can think of!
+            expose machine-readable formal metadata about those commands. This allows integration code
+            can be decoupled and abstracted away. So you can write your domain logic once and automatically use it
+            via CLI, HTTP, MCP, in AI agents, in async job queues...
+            whatever integration you can think of or even haven&apos;t thought of yet!
           </p>
-          <div className="hero-cta">
-            <a className="cta-button" href="http://github.com/foobara/foobara">GitHub</a>
-
-            <a
-              href="https://youtu.be/SSOmQqjNSVY"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button secondary"
-            >
-              Watch Introduction
-            </a>
-          </div>
         </div>
       </section>
 
@@ -153,7 +141,14 @@ function Home () {
         <h2>Ready to Get Started?</h2>
         <div className="cta-buttons">
           <a className="cta-button" href="http://github.com/foobara/foobara">GitHub</a>
-          <Link to="/videos" className="cta-button secondary">Watch Videos</Link>
+          <a
+            href="https://youtu.be/SSOmQqjNSVY"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button secondary"
+          >
+            Watch an Intro Video
+          </a>
         </div>
       </section>
     </div>
