@@ -74,9 +74,9 @@ function Home () {
           </div>
 
           <div className="benefit-item">
-            <h3>Clear Mental Models</h3>
-            <p>Operate within a specific mental model at a time independent of integration concerns.</p>
-            <p>Commands provide a clear mental model of the problem and better communication among the team.</p>
+            <h3>Clearer Mental Models</h3>
+            <p>Commands the public interfaces and have domain-specific names and implementation, helping with
+            communication and understanding across teams.</p>
           </div>
 
           <div className="benefit-item">
@@ -93,6 +93,11 @@ function Home () {
             <h3>Commands</h3>
             <p>The champion of Foobara! Encapsulate high-level domain operations and expose them in new ways
               without refactoring your precious domain logic.</p>
+          </div>
+
+          <div className="tool-item">
+            <h3>Models & Entities</h3>
+            <p>Define discoverable domain models and entities with persistence and transaction support.</p>
           </div>
 
           <div className="tool-item">
@@ -113,11 +118,6 @@ function Home () {
           <div className="tool-item">
             <h3>Custom Types</h3>
             <p>Create custom data types that other tools and systems can discover.</p>
-          </div>
-
-          <div className="tool-item">
-            <h3>Models & Entities</h3>
-            <p>Define discoverable domain models and entities with persistence and transaction support.</p>
           </div>
 
           <div className="tool-item">
