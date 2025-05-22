@@ -26,8 +26,12 @@
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 800px;
-  margin: 0 auto 2rem;
+  margin: 1.5rem auto 2rem;
   text-align: left;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero-cta {
@@ -71,12 +75,20 @@ section h2 {
   font-size: 2rem;
 }
 
-.feature-group, .benefits-list, .tools-list {
+.feature-group, .tools-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
 .feature, .benefit-item, .tool-item {
@@ -160,6 +172,7 @@ section h2 {
   
   .feature-group, .benefits-list, .tools-list {
     flex-direction: column;
+    gap: 1.5rem;
   }
   
   .feature, .benefit-item, .tool-item {
