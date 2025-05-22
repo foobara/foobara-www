@@ -1,0 +1,68 @@
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact-header {
+  color: var(--foob-green-dark);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+
+.contact-info h3 {
+  color: var(--foob-brown-dark);
+  margin-bottom: 0.5rem;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--foob-green-dark);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-links a:hover {
+  background-color: var(--foob-green-light);
+}
+
+.contact-links a.secondary {
+  background-color: var(--foob-brown-dark);
+}
+
+.contact-links a.secondary:hover {
+  background-color: var(--foob-brown-light);
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-links a {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-right: 0;
+  }
+}

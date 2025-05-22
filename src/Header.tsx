@@ -33,8 +33,16 @@ const Header: React.FC = () => (
           </NavLink>
         </li>
         <li>
-          <a 
-            href="http://github.com/foobara/foobara" 
+          <NavLink
+          to="/contact"
+          end
+          className={activeClassName}>
+            Contact
+          </NavLink>
+        </li>
+        <li>
+          <a
+            href="http://github.com/foobara/foobara"
             className="secondary"
             target="_blank"
             rel="noopener noreferrer"

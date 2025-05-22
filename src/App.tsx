@@ -8,6 +8,7 @@ import Header from './Header'
 import Home from './Home'
 import Docs from './Docs'
 import Videos from './Videos'
+import Contact from './Contact'
 
 function App () {
   return (
@@ -17,6 +18,7 @@ function App () {
         <Route path="/" element={<Home />} />
         <Route path="/docs" element={<Docs />} />
         <Route path="/videos" element={<Videos />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/colors" element={<Colors />} />
       </Routes>
     </div>

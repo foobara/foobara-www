@@ -14,7 +14,7 @@ function Home () {
             Foobara helps you encapsulate high-level domain operations in commands and automatically
             expose machine-readable formal metadata about those commands so that integration code
             can be decoupled and abstracted away.  Write your domain logic once and automatically use it
-            via CLI, HTTP, MCP, in AI agents, in async job queues, whatever integration you can think of!
+            via CLI, HTTP, MCP, in AI agents, in async job queues... whatever integration you can think of!
           </p>
           <div className="hero-cta">
             <a className="cta-button" href="http://github.com/foobara/foobara">GitHub</a>
