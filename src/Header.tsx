@@ -15,7 +15,7 @@ const Header: React.FC = () => (
           className={activeClassName}>
             Home
           </NavLink>
-                  </li>
+        </li>
         <li>
           <NavLink
           to="/docs"
@@ -23,7 +23,7 @@ const Header: React.FC = () => (
           className={activeClassName}>
             Docs
           </NavLink>
-                  </li>
+        </li>
         <li>
           <NavLink
           to="/videos"
@@ -31,9 +31,16 @@ const Header: React.FC = () => (
           className={activeClassName}>
             Videos
           </NavLink>
-                  </li>
+        </li>
         <li>
-          <a href="http://github.com/foobara/foobara">GitHub</a>
+          <a 
+            href="http://github.com/foobara/foobara" 
+            className="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </li>
       </ul>
     </nav>
