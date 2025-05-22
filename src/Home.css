@@ -1,11 +1,11 @@
 .Home {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem 2rem;
 }
 
 .hero-section {
-  padding: 3rem 1rem;
+  padding: 1rem 1rem 3rem;
   margin-bottom: 3rem;
   text-align: center;
 }
