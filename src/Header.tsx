@@ -18,10 +18,18 @@ const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-            to="/contact"
+            to="/community"
             end
             className={activeClassName}>
-            Contact
+            Join the Community
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+          to="/blog"
+          end
+          className={activeClassName}>
+            FoobArticles
           </NavLink>
         </li>
         <li>
@@ -48,6 +56,14 @@ const Header: React.FC = () => (
           >
             GitHub
           </a>
+        </li>
+        <li>
+          <NavLink
+            to="/contact"
+            end
+            className={activeClassName}>
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>

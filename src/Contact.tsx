@@ -8,12 +8,30 @@ function Contact () {
 
       <div className="contact-card">
         <div className="contact-info">
-          <h3>Get in Touch</h3>
+          <h3>Get in Touch!</h3>
+          <p>Have questions about Foobara?</p>
           <p>Need help building something with Foobara? We&apos;d love to help!</p>
           <p>Want to help build Foobara? There are fun tasks to do for all experience levels!
             We need art, documentation, code, help building a community... you name it we need it!</p>
         </div>
+      </div>
 
+      <div className="contact-card">
+        <div className="contact-info">
+          <h3>Let&apos;s chat Foobara!</h3>
+          <div className="contact-links">
+            <a
+              href="https://discord.gg/dDpdFAeCHB"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Find us on Discord
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="contact-card">
         <div className="contact-info">
           <h3>Email</h3>
           <p>miles@foobara.com</p>
@@ -21,15 +39,7 @@ function Contact () {
 
         <div className="contact-links">
           <a
-            href="http://github.com/foobara/foobara"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub Repository
-          </a>
-          <a
             href="mailto:miles@foobara.com"
-            className="secondary"
           >
             Email us!
           </a>
