@@ -103,6 +103,7 @@ section h2 {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
+  height: 30vh;
 }
 
 .feature h3, .benefit-item h3, .tool-item h3 {
@@ -178,7 +179,7 @@ section h2 {
   
   .feature-group, .benefits-list, .tools-list {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
   }
   
   .feature, .benefit-item, .tool-item {
