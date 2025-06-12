@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Colors from './Colors'
 import Header from './Header'
+import Footer from './Footer'
 import Home from './Home'
 import Docs from './Docs'
 import Videos from './Videos'
@@ -25,6 +26,7 @@ function App () {
         <Route path="/blog" element={<FoobArticles />} />
         <Route path="/colors" element={<Colors />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

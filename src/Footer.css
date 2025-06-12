@@ -1,0 +1,20 @@
+.footer {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer-icons a {
+  margin: 1rem;
+  color:#fff;
+  transition: color 0.3s ease;
+  background-color: var(--foob-green-dark);;
+  padding: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-radius: 15px;
+}
+
+.footer-icons a:hover {
+  background-color: var(--foob-green-light);
+}
