@@ -12,7 +12,7 @@ const Footer: React.FC = () => (
       <a href="https://discord.gg/dDpdFAeCHB" target="_blank" rel="noopener noreferrer">
         {FaDiscord({ size: 30 })}
       </a>
-      <a href="https://bsky.app/profile/foobnews.bsky.social" target="_blank" rel="noopener noreferrer">
+      <a href="https://bsky.app/profile/foob.news" target="_blank" rel="noopener noreferrer">
         {SiBluesky({ size: 30 })}
       </a>
     </div>
