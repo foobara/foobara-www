@@ -5,6 +5,22 @@ function Videos () {
   return (
     <div className="Videos">
       <div>
+        <h1>Writing an AI Agent in 1 Line of Ruby Code using Foobara&apos;s AgentBackedCommand</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hBleW4m9JFQ?si=TxzEj7dHK9mRfLCd"
+                title="YouTube video player" frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen></iframe>
+      </div>
+      <div>
+        <h1>Foobara::Agent code demo</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uFRKk_nnDiE?si=w0yE7auqgxnUl-Ri"
+                title="YouTube video player" frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen></iframe>
+      </div>
+      <div>
         <h1>Foobara::LLmBackedCommand: Write commands without logic and use LLM knowledge or decision-making
           programmatically!</h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/MsCCcz63umc?si=Lr-LMDx2nhAoBfmj"

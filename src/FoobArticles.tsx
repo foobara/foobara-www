@@ -12,6 +12,14 @@ function Community () {
           <div className="contact-links">
             <a
               href=
+                "https://dev.to/foobara/writing-an-ai-agent-in-1-line-of-ruby-code-using-foobaras-agentbackedcommand-m6p"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Writing an AI Agent in 1 Line of Ruby Code Using Foobara::AgentBackedCommand
+            </a>
+            <a
+              href=
                 "https://medium.com/@foobarticles/creating-an-ai-agent-with-the-foobara-agent-cli-ruby-gem-4f8e0280983f"
               target="_blank"
               rel="noopener noreferrer"
