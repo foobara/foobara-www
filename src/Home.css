@@ -103,7 +103,7 @@ section h2 {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  height: 30vh;
+  min-height: 200px;
 }
 
 .feature h3, .benefit-item h3, .tool-item h3 {
