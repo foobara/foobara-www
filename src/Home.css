@@ -79,7 +79,7 @@ section h2 {
   margin-bottom: 1.5rem;
 }
 
-.feature-group, .tools-list {
+.feature-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -87,15 +87,23 @@ section h2 {
   gap: 0.5rem;
 }
 
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 1.5rem;
 }
 
-.feature, .benefit-item, .tool-item {
+.feature {
   flex: 1;
   min-width: 300px;
   padding: 1.5rem;
@@ -104,6 +112,17 @@ section h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   min-height: 200px;
+}
+
+.benefit-item, .tool-item {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  min-height: 140px;
 }
 
 .feature h3, .benefit-item h3, .tool-item h3 {
