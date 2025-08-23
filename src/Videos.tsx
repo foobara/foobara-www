@@ -4,6 +4,10 @@ import './App.css'
 function Videos () {
   const videos = [
     {
+      url: 'https://www.youtube.com/watch?v=xu09IkchT_I&t=3602s',
+      title: 'A Live presentation and code demo of Foobara at Chicago Ruby meetup at Workforce.com!'
+    },
+    {
       url: 'https://www.youtube.com/watch?v=hBleW4m9JFQ',
       title: 'Writing an AI Agent in 1 Line of Ruby Code using Foobara\'s AgentBackedCommand'
     },
