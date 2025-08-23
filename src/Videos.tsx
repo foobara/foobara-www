@@ -2,63 +2,72 @@ import React from 'react'
 import './App.css'
 
 function Videos () {
+  const videos = [
+    {
+      url: 'https://www.youtube.com/watch?v=hBleW4m9JFQ',
+      title: 'Writing an AI Agent in 1 Line of Ruby Code using Foobara\'s AgentBackedCommand'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=uFRKk_nnDiE',
+      title: 'Foobara::Agent code demo'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=MsCCcz63umc',
+      title: 'Foobara::LLmBackedCommand: Write commands without logic and use LLM knowledge or decision-making programmatically!'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=_w3ZHdiJEGU',
+      title: 'Foobara MCP connector: Create an MCP server for your Ruby code with great ease!'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=SSOmQqjNSVY',
+      title: 'What is Foobara and why would one want to use a framework like this?'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=3_cUiO3cCGg',
+      title: 'A Foobara code demo'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=EPuQFIuqtMA',
+      title: 'Model/Entity basics code demo (plus transactions)'
+    }
+  ]
+
+  const getVideoId = (url: string) => {
+    const match = url.match(/[?&]v=([^&]+)/)
+
+    if (match != null) {
+      return match[1]
+    } else {
+      return ''
+    }
+  }
+
   return (
     <div className="Videos">
-      <div>
-        <h1>Writing an AI Agent in 1 Line of Ruby Code using Foobara&apos;s AgentBackedCommand</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hBleW4m9JFQ?si=TxzEj7dHK9mRfLCd"
-                title="YouTube video player" frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen></iframe>
-      </div>
-      <div>
-        <h1>Foobara::Agent code demo</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uFRKk_nnDiE?si=w0yE7auqgxnUl-Ri"
-                title="YouTube video player" frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen></iframe>
-      </div>
-      <div>
-        <h1>Foobara::LLmBackedCommand: Write commands without logic and use LLM knowledge or decision-making
-          programmatically!</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MsCCcz63umc?si=Lr-LMDx2nhAoBfmj"
-                title="YouTube video player" frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen></iframe>
-      </div>
-      <div>
-        <h1>Foobara MCP connector: Create an MCP server for your Ruby code with great ease!</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_w3ZHdiJEGU?si=8N-7EkqIxp6RUjGQ"
-                title="YouTube video player" frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen>
-        </iframe>
-      </div>
-      <div>
-        <h1>What is Foobara and why would one want to use a framework like this?</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SSOmQqjNSVY?si=yivq1SgJldU2ugDe"
-                title="YouTube video player" frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-      </div>
-      <div>
-        <h1>A Foobara code demo</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3_cUiO3cCGg?si=g2pgGY1e6yI4OjnK"
-                title="YouTube video player" frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-      </div>
-
-      <div>
-        <h1>Model/Entity basics code demo (plus transactions)</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EPuQFIuqtMA?si=u4I9gDoKzJZxMhbN"
-                title="YouTube video player" frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <h1>Foobara Video Tutorials</h1>
+      <div className="videos-list">
+        {videos.map((video) => (
+          <div key={video.url} className="video-item">
+            <div className="video-thumbnail">
+              <img
+                src={`https://img.youtube.com/vi/${getVideoId(video.url)}/mqdefault.jpg`}
+                alt={video.title}
+                onClick={() => window.open(video.url, '_blank')}
+              />
+            </div>
+            <div className="video-info">
+              <a
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="video-title"
+              >
+                {video.title}
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
