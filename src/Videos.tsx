@@ -4,6 +4,10 @@ import './App.css'
 function Videos () {
   const videos = [
     {
+      url: 'https://www.youtube.com/watch?v=IMAABWxnbUM&t=6583s',
+      title: 'Foobara presentation at SF Ruby meetup at Github.com!'
+    },
+    {
       url: 'https://www.youtube.com/watch?v=xu09IkchT_I&t=3602s',
       title: 'A Live presentation and code demo of Foobara at Chicago Ruby meetup at Workforce.com!'
     },

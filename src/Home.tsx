@@ -27,7 +27,7 @@ function Home () {
             <h3>Command-centric</h3>
             <ul>
               <li>Encapsulate high-level domain operations</li>
-              <li>Serve as the public interface to your systems</li>
+              <li>Commands serve as the public interface to your domains</li>
             </ul>
           </div>
 
