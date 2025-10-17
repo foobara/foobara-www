@@ -4,7 +4,7 @@ import './App.css'
 function Videos () {
   const videos = [
     {
-      url: 'https://youtu.be/N5BJfzhL3Ig',
+      url: 'https://www.youtube.com/watch?v=N5BJfzhL3Ig',
       title: 'Creating two AgentBackedCommands that coordinate and some ' +
              'epiphanies about domain logic and prototyping with LLMs'
     },
