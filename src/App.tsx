@@ -10,7 +10,6 @@ import Home from './Home'
 import Docs from './Docs'
 import Videos from './Videos'
 import Contact from './Contact'
-import Community from './Community'
 import FoobArticles from './FoobArticles'
 
 function App () {
@@ -22,7 +21,6 @@ function App () {
         <Route path="/docs" element={<Docs />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/community" element={<Community />} />
         <Route path="/blog" element={<FoobArticles />} />
         <Route path="/colors" element={<Colors />} />
       </Routes>

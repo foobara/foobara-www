@@ -20,14 +20,6 @@ const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-            to="/community"
-            end
-            className={activeClassName}>
-            Join the Community
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
           to="/blog"
           end
           className={activeClassName}>
