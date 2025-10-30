@@ -58,7 +58,7 @@ function Videos () {
 
   return (
     <div className="Videos">
-      <h1>Foobara Video Tutorials</h1>
+      <h1>Foobara Videos</h1>
       <div className="videos-list">
         {videos.map((video) => (
           <div key={video.url} className="video-item">
