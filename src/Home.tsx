@@ -138,18 +138,14 @@ function Home () {
       </section>
 
       <section className="cta-section">
-        <h2>Ready to Get Started?</h2>
-        <div className="cta-buttons">
-          <a className="cta-button" href="http://github.com/foobara/foobara">GitHub</a>
-          <a
-            href="https://youtu.be/SSOmQqjNSVY"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button secondary"
-          >
-            Watch an Intro Video
-          </a>
-        </div>
+        <a
+          href="https://youtu.be/SSOmQqjNSVY"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-button secondary"
+        >
+          Watch an Intro Video!
+        </a>
       </section>
     </div>
   )

@@ -52,22 +52,22 @@ const Header: React.FC = () => (
         </li>
         <li className="header-icon">
           <a href="https://bsky.app/profile/foob.news" target="_blank" rel="noopener noreferrer">
-            {SiBluesky({ size: 18 })}
+            {SiBluesky({ size: 24 })}
           </a>
         </li>
         <li className="header-icon">
           <a href="https://discord.gg/dDpdFAeCHB" target="_blank" rel="noopener noreferrer">
-            {FaDiscord({ size: 18 })}
+            {FaDiscord({ size: 24 })}
           </a>
         </li>
         <li className="header-icon">
           <a href="http://youtube.com/@FoobaraFlix" target="_blank" rel="noopener noreferrer">
-            {FaYoutube({ size: 18 })}
+            {FaYoutube({ size: 24 })}
           </a>
         </li>
         <li className="header-icon">
           <a href="http://github.com/foobara/foobara" target="_blank" rel="noopener noreferrer">
-            {FaGithub({ size: 18 })}
+            {FaGithub({ size: 24 })}
           </a>
         </li>
       </ul>

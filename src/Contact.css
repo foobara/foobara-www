@@ -35,7 +35,7 @@
   background-color: var(--foob-green-dark);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 20px;
   font-weight: bold;
   transition: background-color 0.3s;
 }

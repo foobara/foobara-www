@@ -1,5 +1,5 @@
 .footer {
-  padding: 1rem;
+  padding: 0 1rem 1rem;
   color: white;
   text-align: center;
   margin-bottom: 1rem;
@@ -8,11 +8,13 @@
 .footer-icons a {
   margin: 1rem;
   color:#fff;
-  transition: color 0.3s ease;
-  background-color: var(--foob-green-dark);;
-  padding: 1.2rem;
-  padding-bottom: 0.5rem;
-  border-radius: 15px;
+  transition: background-color 0.3s;
+  background-color: var(--foob-green-dark);
+  padding: 1rem 1.3rem;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-icons a:hover {
