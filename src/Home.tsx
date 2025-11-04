@@ -2,6 +2,8 @@ import React from 'react'
 import './App.css'
 import './Home.css'
 
+import SimpleCommandCodeDemo from './Home/SimpleCommandCodeDemo'
+
 function Home () {
   return (
     <div className="Home">
@@ -18,6 +20,8 @@ function Home () {
           </p>
         </div>
       </section>
+
+      <SimpleCommandCodeDemo/>
 
       <section className="features-section">
         <h2>Core Features & Concepts</h2>

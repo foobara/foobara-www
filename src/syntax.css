@@ -1,0 +1,86 @@
+pre {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+pre code {
+  background-color: #000;
+
+  /* comments */
+  .c1 {
+    color: #999;
+    font-style: italic;
+    color: #6f6fd4; /* lighter green */
+    color: #666;
+  }
+
+  /* keywords */
+  .k {
+    color: #6f6fd4; /* lighter green */
+    color: #89CFF0;
+  }
+
+  /* method call/definition */
+  .nf {
+    color: #fefae0; /* foob-yellow */
+    font-weight: bold;
+  }
+
+  /* built-in names */
+  .nb {
+    color: #fefae0; /* foob-yellow */
+    font-weight: bold;
+  }
+
+  /* constants */
+  .no {
+    color: #dda15e; /* foob-brown-light (light orange) */
+    font-weight: bold;
+  }
+
+  /* class names */
+  .nc {
+    color: #dda15e; /* foob-brown-light (light orange) */
+    font-weight: bold;
+  }
+
+  /* strings */
+  .s2 {
+    color: #a8d46f; /* lighter green */
+    color: #89CFF0;
+    color: var(--foob-green-lighter);
+  }
+
+  /* string interpolation */
+  .si {
+    color: #fefae0; /* foob-yellow */
+    font-weight: bold;
+  }
+
+  /* symbols */
+  .ss {
+    /* color: #dda15e; /* foob-brown-light (light orange) */
+    color: #bc6c25; /* foob-brown-dark (dark orange) */
+
+    font-weight: bold;
+  }
+
+  /* operators */
+  .o {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  /* punctuation */
+  .p {
+    color: #aaa;
+    font-weight: bold;
+  }
+
+  /* local variables */
+  .n {
+    color: #bbb;
+    /* font-style: italic; */
+  }
+}
