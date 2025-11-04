@@ -23,14 +23,22 @@ function Home () {
 
       <SimpleCommandCodeDemo/>
 
-      <section className="features-section">
-        <h2>Core Features & Concepts</h2>
+      <section className="diagram-section">
+        <div className="diagram-container">
+          <img
+            src="/cc_plus_discoverable.jpg"
+            alt="Diagram showing how Foobara combines command-centric approach with discoverability"
+            className="diagram-image"
+          />
+        </div>
+      </section>
 
+      <section className="features-section">
         <div className="feature-group">
           <div className="feature">
             <h3>Command-centric</h3>
             <ul>
-              <li>Encapsulate high-level domain operations</li>
+              <li>Domain operation are encapsulated and composable</li>
               <li>Commands serve as the public interface to your domains</li>
             </ul>
           </div>
@@ -41,31 +49,21 @@ function Home () {
             <h3>Discoverability</h3>
             <ul>
               <li>Formal, machine-readable description of systems</li>
-              <li>Abstract away integration code</li>
-              <li>Enable tooling and automation</li>
+              <li>Used to abstract away integration code</li>
+              <li>Enables tooling and automation</li>
             </ul>
           </div>
 
           <div className="operator">=</div>
 
           <div className="feature">
-            <h3>Domain Complexity Management</h3>
+            <h3>Foobara</h3>
             <ul>
-              <li>Better communicate mental models</li>
-              <li>Avoid coupling domain logic to integration logic</li>
-              <li>Focus on domain problems, not infrastructure</li>
+              <li>Better communicates mental models</li>
+              <li>Avoids coupling domain logic to integration logic</li>
+              <li>Focuses on the domain problem, not integration</li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section className="diagram-section">
-        <div className="diagram-container">
-          <img
-            src="/cc_plus_discoverable.jpg"
-            alt="Diagram showing how Foobara combines command-centric approach with discoverability"
-            className="diagram-image"
-          />
         </div>
       </section>
 
@@ -79,8 +77,8 @@ function Home () {
 
           <div className="benefit-item">
             <h3>Clearer Mental Models</h3>
-            <p>Commands the public interfaces and have domain-specific names and implementation, helping with
-            communication and understanding across teams.</p>
+            <p>Commands form public interface and have domain-specific names and implementation, helping with
+            communication and understanding mental models across teams/orgs.</p>
           </div>
 
           <div className="benefit-item">
