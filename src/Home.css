@@ -22,6 +22,10 @@
   color: var(--foob-brown-dark);
 }
 
+.foobara-title {
+  color: var(--foob-green-dark);
+}
+
 .hero-description {
   font-size: 1.2rem;
   line-height: 1.6;

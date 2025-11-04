@@ -9,8 +9,22 @@ function Home () {
     <div className="Home">
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Foobara</h1>
-          <h2>A Command-Centric Framework for Complex Domains!</h2>
+          <h2><span className="foobara-title">Foobara!</span> The Command-Centric Framework that Abstracts-Away Integration Code!</h2>
+        </div>
+      </section>
+
+      <section className="example-section">
+        <SimpleCommandCodeDemo/>
+      </section>
+
+      <section className="hero-section">
+        <div className="hero-content">
+          <h2><span className="foobara-title">Moar Deets:</span></h2>
+        </div>
+      </section>
+
+      <section className="hero-section">
+        <div className="hero-content">
           <p className="hero-description">
             Foobara helps you encapsulate high-level domain operations in commands and automatically
             expose machine-readable formal metadata about those commands. This allows integration code
@@ -19,10 +33,6 @@ function Home () {
             whatever integration you can think of or even haven&apos;t thought of yet!
           </p>
         </div>
-      </section>
-
-      <section className="example-section">
-        <SimpleCommandCodeDemo/>
       </section>
 
       <section className="diagram-section">
@@ -79,8 +89,8 @@ function Home () {
 
           <div className="benefit-item">
             <h3>Clearer Mental Models</h3>
-            <p>Commands form public interface and have domain-specific names and implementation, helping with
-            communication and understanding mental models across teams/orgs.</p>
+            <p>Commands form each Domain&apos;s public interface and have domain-specific names and implementation, helping with
+            communication and understanding mental models across teams/orgs/systems.</p>
           </div>
 
           <div className="benefit-item">
