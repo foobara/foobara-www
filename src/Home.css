@@ -193,9 +193,63 @@ section h2 {
   margin-bottom: 1.5rem;
 }
 
+.example-with-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.baby-capybara-bottle-side {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.baby-capybara-bottle-side h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--foob-green-dark);
+  font-size: 3rem;
+  width: 500px;
+  line-height: 1.2;
+}
+
+.baby-capybara-bottle-image-container {
+  flex-shrink: 0;
+  width: 500px;
+  margin-top: 2rem;
+}
+
+.baby-capybara-bottle-image {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-attribution {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+.image-attribution a {
+  color: var(--foob-green-dark);
+  text-decoration: none;
+}
+
+.image-attribution a:hover {
+  text-decoration: underline;
+}
+
 .example-container {
   width: 610px;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 0;

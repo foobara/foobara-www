@@ -21,7 +21,9 @@ function Home () {
         </div>
       </section>
 
-      <SimpleCommandCodeDemo/>
+      <section className="example-section">
+        <SimpleCommandCodeDemo/>
+      </section>
 
       <section className="diagram-section">
         <div className="diagram-container">
