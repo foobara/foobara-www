@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../syntax.css'
+import '../../../syntax.css'
 
 const html = `<span class="k">class</span> <span class="nc">CreateCapybara</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Command</span>
   <span class="nf">description</span> <span class="s2">"Just creates a capybara!"</span>

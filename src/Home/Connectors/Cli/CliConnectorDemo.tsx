@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 import CliConnectorCode from './CliConnectorCode'
 import CliConnectorCodeTypes from './CliConnectorCodeTypes'
 import CliConnectorCodeCommands from './CliConnectorCodeCommands'
-import '../Home.css'
+import '../../../Home.css'
 
-export default function ConnectorsDemos () {
+export default function CliConnectorDemo () {
   const [activeTab, setActiveTab] = useState('connector')
 
   return (<div className="example-with-image">
@@ -14,33 +14,25 @@ export default function ConnectorsDemos () {
           <div>
             <button
               className={`tab ${activeTab === 'commands' ? 'active' : ''}`}
-              onClick={() => {
-                setActiveTab('commands')
-              }}
+              onClick={() => { setActiveTab('commands') } }
             >
               Commands
             </button>
             <button
               className={`tab ${activeTab === 'types' ? 'active' : ''}`}
-              onClick={() => {
-                setActiveTab('types')
-              }}
+              onClick={() => { setActiveTab('types') } }
             >
               Types
             </button>
             <button
               className={`tab ${activeTab === 'connector' ? 'active' : ''}`}
-              onClick={() => {
-                setActiveTab('connector')
-              }}
+              onClick={() => { setActiveTab('connector') } }
             >
               CLI Connector
             </button>
             <button
               className={`tab ${activeTab === 'output' ? 'active' : ''}`}
-              onClick={() => {
-                setActiveTab('output')
-              }}
+              onClick={() => { setActiveTab('output') } }
             >
               Output
             </button>

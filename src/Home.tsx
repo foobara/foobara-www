@@ -3,7 +3,7 @@ import './App.css'
 import './Home.css'
 
 import SimpleCommandCodeDemo from './Home/SimpleCommandCodeDemo'
-import ConnectorsDemos from './Home/ConnectorsDemos'
+import ConnectorsDemos from './Home/Connectors/ConnectorsDemos'
 
 function Home () {
   return (
