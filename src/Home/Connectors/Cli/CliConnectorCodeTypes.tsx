@@ -3,6 +3,8 @@ import React from 'react'
 import '../../../syntax.css'
 
 const html = `<span class="k">class</span> <span class="nc">Capybara</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Entity</span>
+  <span class="nf">description</span> <span class="s2">"A giant semi-aquatic rodent!"</span>
+
   <span class="nf">attributes</span> <span class="k">do</span>
     <span class="nb">id</span> <span class="ss">:integer</span>
     <span class="nb">name</span> <span class="ss">:string</span><span class="p">,</span> <span class="ss">:required</span><span class="p">,</span> <span class="s2">"Official name"</span>

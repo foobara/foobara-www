@@ -10,8 +10,18 @@ function Home () {
     <div className="Home">
       <section className="hero-section">
         <div className="hero-content">
-          <h2><span className="foobara-title">Foobara!</span> The Command-Centric Framework that Abstracts-Away Integration Code!</h2>
+          <h2>Foobara is the Command-Centric and Discoverable Framework that Abstracts-Away Integration Code!</h2>
         </div>
+      </section>
+
+      <section className="hero-explanation">
+        <p>
+          Write your domain logic as Foobara commands and <strong>automatically get a Ruby or Typescript SDK
+          with no additional work!</strong> <strong>Easily integrate</strong> those commands
+          with <strong>CLI</strong>, <strong>HTTP</strong>, <strong>MCP</strong>, <strong>AI agents</strong>, <strong>async job queues/schedulers</strong>...
+          whatever integration you can think of. And also automatically <strong>be forward compatible with integrations
+          that haven&apos;t even been thought of yet!</strong>
+        </p>
       </section>
 
       <section className="example-section">
@@ -20,18 +30,6 @@ function Home () {
 
       <section className="example-section">
         <ConnectorsDemos/>
-      </section>
-
-      <section className="hero-section">
-        <div className="hero-content">
-          <p className="hero-description">
-            Foobara helps you encapsulate high-level domain operations in commands and automatically
-            expose machine-readable formal metadata about those commands. This allows integration code
-            can be decoupled and abstracted away. So you can write your domain logic once and automatically use it
-            via CLI, HTTP, MCP, in AI agents, in async job queues...
-            whatever integration you can think of or even haven&apos;t thought of yet!
-          </p>
-        </div>
       </section>
 
       <section className="diagram-section">
@@ -100,7 +98,7 @@ function Home () {
       </section>
 
       <section className="tools-section">
-        <h2>Helpful Abstractions</h2>
+        <h2>The Roster of Abstractions</h2>
         <div className="tools-list">
           <div className="tool-item">
             <h3>Commands</h3>

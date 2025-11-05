@@ -3,7 +3,7 @@ import React from 'react'
 import '../../../syntax.css'
 
 const html = `<span class="k">class</span> <span class="nc">CreateCapybara</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Command</span>
-  <span class="nf">description</span> <span class="s2">"Just creates a capybara!"</span>
+  <span class="nf">description</span> <span class="s2">"Creates a giant semi-aquatic rodent!"</span>
 
   <span class="nf">inputs</span> <span class="no">Capybara</span><span class="p">.</span><span class="nf">attributes_type</span>
   <span class="nf">result</span> <span class="no">Capybara</span>

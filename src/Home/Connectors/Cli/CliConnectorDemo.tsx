@@ -58,7 +58,7 @@ Usage: capy-cafe [GLOBAL_OPTIONS] [ACTION] [COMMAND_OR_TYPE] [COMMAND_INPUTS]
 
 Available commands:
 
-  CreateCapybara   Just creates a capybara!
+  CreateCapybara   Creates a giant semi-aquatic rodent!
   IncrementAge     A trip around the sun!
   FindCapybara     Just tell us who you want to find!
 

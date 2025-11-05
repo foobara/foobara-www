@@ -8,7 +8,7 @@ const html = `<span class="n">command_connector</span> <span class="o">=</span> 
 <span class="n">command_connector</span><span class="p">.</span><span class="nf">connect</span><span class="p">(</span><span class="no">IncrementAge</span><span class="p">)</span>
 <span class="n">command_connector</span><span class="p">.</span><span class="nf">connect</span><span class="p">(</span><span class="no">FindCapybara</span><span class="p">)</span>
 
-<span class="n">command_connector</span><span class="p">.</span><span class="nf">run</span><span class="p">(</span><span class="no">ARGV</span><span class="p">)</span>`
+<span class="n">command_connector</span><span class="p">.</span><span class="nf">run</span>`
 
 export default function CliConnectorCode () {
   return <pre><code dangerouslySetInnerHTML={{ __html: html }} /></pre>
