@@ -1,0 +1,13 @@
+import React from 'react'
+
+import '../../../syntax.css'
+
+const html = `<span class="no">CreateCapybara</span><span class="p">.</span><span class="nf">run!</span><span class="p">(</span><span class="ss">name: </span><span class="s2">"Fumiko"</span><span class="p">,</span> <span class="ss">year_of_birth: </span><span class="mi">2020</span><span class="p">)</span>
+<span class="c1"># For this example, let's intentionally break a Capybara's age by using a</span>
+<span class="c1"># 2-digit age instead of 4-digit and see if the MCP client can find/fix it</span>
+<span class="no">CreateCapybara</span><span class="p">.</span><span class="nf">run!</span><span class="p">(</span><span class="ss">name: </span><span class="s2">"Barbara"</span><span class="p">,</span> <span class="ss">year_of_birth: </span><span class="mi">19</span><span class="p">)</span>
+<span class="no">CreateCapybara</span><span class="p">.</span><span class="nf">run!</span><span class="p">(</span><span class="ss">name: </span><span class="s2">"Basil"</span><span class="p">,</span> <span class="ss">year_of_birth: </span><span class="mi">2021</span><span class="p">)</span>`
+
+export default function McpConnectorCodeSetup () {
+  return <pre><code dangerouslySetInnerHTML={{ __html: html }} /></pre>
+}

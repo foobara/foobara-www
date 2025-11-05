@@ -263,6 +263,51 @@ section h2 {
   width: 770px;
 }
 
+/* Connector selector */
+.connector-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.connector-selector-label {
+  color: var(--foob-green-dark);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.connector-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.connector-button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--foob-green-dark);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.connector-button:hover {
+  background-color: var(--foob-green-light);
+}
+
+.connector-button.active {
+  background-color: var(--foob-brown-dark);
+}
+
+.connector-button.active:hover {
+  background-color: var(--foob-brown-light);
+}
+
 /* Tab navigation */
 .tabs {
   display: flex;
