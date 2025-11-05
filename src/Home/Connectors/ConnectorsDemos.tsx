@@ -23,6 +23,54 @@ export default function ConnectorsDemos () {
         >
           MCP
         </button>
+        <a
+          href="https://github.com/foobara/rack-connector"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="connector-button"
+        >
+          Rack
+        </a>
+        <a
+          href="https://github.com/foobara/rails-command-connector"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="connector-button"
+        >
+          Rails
+        </a>
+        <a
+          href="https://github.com/foobara/resque-connector"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="connector-button"
+        >
+          Resque
+        </a>
+        <a
+          href="https://github.com/foobara/resque-scheduler-connector"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="connector-button"
+        >
+          Resque Scheduler
+        </a>
+        <a
+          href="https://github.com/foobara/agent"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="connector-button"
+        >
+          Foobara Agent
+        </a>
+        <a
+          href="https://github.com/foobara/agent-cli"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="connector-button"
+        >
+          Foobara Agent CLI
+        </a>
       </div>
     </div>
 

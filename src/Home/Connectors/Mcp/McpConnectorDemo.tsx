@@ -45,7 +45,7 @@ export default function McpConnectorDemo () {
             </button>
           </div>
           <a
-            href="https://github.com/foobara/mcp-connector"
+            href="https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector"
             target="_blank"
             rel="noopener noreferrer"
             className="tab-link"
