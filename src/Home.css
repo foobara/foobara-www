@@ -5,8 +5,8 @@
 }
 
 .hero-section {
-  padding: 1rem 1rem 2rem;
-  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -30,7 +30,7 @@
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 800px;
-  margin: 1.5rem auto 2rem;
+  margin: 0.5rem auto 0.5rem;
   text-align: left;
   background-color: white;
   padding: 1.5rem;
@@ -190,7 +190,7 @@ section h2 {
 
 .example-section {
   text-align: center;
-  margin: 3rem auto;
+  margin: 3rem auto 0;
 }
 
 .example-section h2 {
@@ -233,6 +233,143 @@ section h2 {
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.capy-and-dog-image-container {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.capy-and-dog-image {
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.meme-text {
+  position: absolute;
+  font-family: Impact, 'Arial Black', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--foob-yellow);
+  /* text-transform: uppercase; */
+  text-shadow:
+    -2px -2px 0 var(--foob-green-dark),
+    2px -2px 0 var(--foob-green-dark),
+    -2px 2px 0 var(--foob-green-dark),
+    2px 2px 0 var(--foob-green-dark),
+    -2px 0 0 var(--foob-green-dark),
+    2px 0 0 var(--foob-green-dark),
+    0 -2px 0 var(--foob-green-dark),
+    0 2px 0 var(--foob-green-dark);
+  pointer-events: none;
+}
+
+.meme-text-foobara {
+  top: 5%;
+  left: 15%;
+}
+
+.meme-text-foobara::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 5px;
+  height: 40px;
+  background-color: var(--foob-green-dark);
+  transform: translateX(-50%);
+}
+
+.meme-text-foobara::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 40px);
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 18px solid var(--foob-green-dark);
+  transform: translateX(-50%);
+}
+
+.meme-text-cli {
+  top: 25%;
+  right: 15%;
+  text-shadow:
+    -2px -2px 0 var(--foob-green-dark),
+    2px -2px 0 var(--foob-green-dark),
+    -2px 2px 0 var(--foob-green-dark),
+    2px 2px 0 var(--foob-green-dark),
+    -2px 0 0 var(--foob-green-dark),
+    2px 0 0 var(--foob-green-dark),
+    0 -2px 0 var(--foob-green-dark),
+    0 2px 0 var(--foob-green-dark);
+}
+
+.meme-text-cli::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 5px;
+  height: 40px;
+  background-color: var(--foob-yellow);
+  transform: translateX(-50%);
+}
+
+.meme-text-cli::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 40px);
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 18px solid var(--foob-yellow);
+  transform: translateX(-50%);
+}
+
+.meme-text-mcp {
+  top: 25%;
+  right: 10%;
+  text-shadow:
+    -2px -2px 0 var(--foob-green-dark),
+    2px -2px 0 var(--foob-green-dark),
+    -2px 2px 0 var(--foob-green-dark),
+    2px 2px 0 var(--foob-green-dark),
+    -2px 0 0 var(--foob-green-dark),
+    2px 0 0 var(--foob-green-dark),
+    0 -2px 0 var(--foob-green-dark),
+    0 2px 0 var(--foob-green-dark);
+}
+
+.meme-text-mcp::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 5px;
+  height: 40px;
+  background-color: var(--foob-yellow);
+  transform: translateX(-50%);
+}
+
+.meme-text-mcp::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 40px);
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 18px solid var(--foob-yellow);
+  transform: translateX(-50%);
 }
 
 .image-attribution {

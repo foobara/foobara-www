@@ -94,5 +94,24 @@ export default function McpConnectorDemo () {
           )}
         </div>
       </div>
+
+      <div className="capy-and-dog-image-container">
+        <img
+          src="/images/capy_and_dog.jpg"
+          alt="Capybara and dog"
+          className="capy-and-dog-image"
+        />
+        <div className="meme-text meme-text-foobara">Foobara</div>
+        <div className="meme-text meme-text-mcp">MCP</div>
+        <p className="image-attribution">
+          <a
+            href="https://linktr.ee/darkwingswildlife"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dark Wings Wildlife & Education
+          </a>
+        </p>
+      </div>
     </div>)
 }
