@@ -3,6 +3,7 @@ import './App.css'
 import './Home.css'
 
 import SimpleCommandCodeDemo from './Home/SimpleCommandCodeDemo'
+import ConnectorsDemos from './Home/ConnectorsDemos'
 
 function Home () {
   return (
@@ -17,10 +18,8 @@ function Home () {
         <SimpleCommandCodeDemo/>
       </section>
 
-      <section className="hero-section">
-        <div className="hero-content">
-          <h2><span className="foobara-title">Moar Deets:</span></h2>
-        </div>
+      <section className="example-section">
+        <ConnectorsDemos/>
       </section>
 
       <section className="hero-section">

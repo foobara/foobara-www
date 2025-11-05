@@ -21,6 +21,12 @@ pre code {
     color: #89CFF0;
   }
 
+  /* special keyword: self */
+  .k-self {
+    color: #89CFF0;
+    font-weight: bold;
+  }
+
   /* method call/definition */
   .nf {
     color: #fefae0; /* foob-yellow */

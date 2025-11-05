@@ -259,6 +259,10 @@ section h2 {
   gap: 0;
 }
 
+.example-container.wide {
+  width: 770px;
+}
+
 /* Tab navigation */
 .tabs {
   display: flex;
