@@ -35,7 +35,7 @@ function Home () {
       <section className="diagram-section">
         <div className="diagram-container">
           <img
-            src="/cc_plus_discoverable.jpg"
+            src="images/cc_plus_discoverable2.jpg"
             alt="Diagram showing how Foobara combines command-centric approach with discoverability"
             className="diagram-image"
           />
