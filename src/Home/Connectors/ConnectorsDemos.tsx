@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import CliConnectorDemo from './Cli/CliConnectorDemo'
 import McpConnectorDemo from './Mcp/McpConnectorDemo'
+import RackConnectorDemo from './Rack/RackConnectorDemo'
 import '../../Home.css'
 
 export default function ConnectorsDemos () {
@@ -23,14 +24,12 @@ export default function ConnectorsDemos () {
         >
           MCP
         </button>
-        <a
-          href="https://github.com/foobara/rack-connector"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="connector-button"
+        <button
+          className={`connector-button ${activeConnector === 'rack' ? 'active' : ''}`}
+          onClick={() => { setActiveConnector('rack') }}
         >
           Rack
-        </a>
+        </button>
         <a
           href="https://github.com/foobara/rails-command-connector"
           target="_blank"
@@ -76,5 +75,6 @@ export default function ConnectorsDemos () {
 
     {activeConnector === 'cli' && <CliConnectorDemo/>}
     {activeConnector === 'mcp' && <McpConnectorDemo/>}
+    {activeConnector === 'rack' && <RackConnectorDemo/>}
   </>)
 }
