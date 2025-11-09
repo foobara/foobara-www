@@ -48,24 +48,28 @@ export default function McpConnectorDemo () {
         </div>
 
         <div className="tab-content" style={{ position: 'relative' }}>
-          <a
-            href="https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="tab-link"
-            style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
-          >
-            View it on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
-          </a>
-          <a
-            href="https://www.youtube.com/watch?v=_w3ZHdiJEGU"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="tab-link"
-            style={{ position: 'absolute', top: '7rem', right: '0.5rem', zIndex: 10 }}
-          >
-            McpConnector Video <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaYoutube({ size: 16 })}</span>
-          </a>
+          {activeTab !== 'output' && activeTab !== 'setup' && (
+            <>
+              <a
+                href="https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tab-link"
+                style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
+              >
+                View it on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=_w3ZHdiJEGU"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tab-link"
+                style={{ position: 'absolute', top: '7rem', right: '0.5rem', zIndex: 10 }}
+              >
+                McpConnector Video <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaYoutube({ size: 16 })}</span>
+              </a>
+            </>
+          )}
           {activeTab === 'commands' && (<McpConnectorCodeCommands/>)}
           {activeTab === 'types' && (<McpConnectorCodeTypes/>)}
           {activeTab === 'setup' && (<McpConnectorCodeSetup/>)}

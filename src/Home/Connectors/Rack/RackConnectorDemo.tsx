@@ -34,15 +34,17 @@ export default function RackConnectorDemo () {
         </div>
 
         <div className="tab-content" style={{ position: 'relative' }}>
-          <a
-            href="https://github.com/foobara/rack-connector?tab=readme-ov-file#example"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="tab-link"
-            style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
-          >
-            View on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
-          </a>
+          {activeTab !== 'output' && (
+            <a
+              href="https://github.com/foobara/rack-connector?tab=readme-ov-file#example"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="tab-link"
+              style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
+            >
+              View on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
+            </a>
+          )}
           {activeTab === 'commands' && (<RackConnectorCodeCommands/>)}
           {activeTab === 'connector' && (<RackConnectorCode/>)}
 

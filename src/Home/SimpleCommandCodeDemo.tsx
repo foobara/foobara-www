@@ -54,14 +54,16 @@ export default function SimpleCommandCodeDemo () {
               Output
             </button>
           </div>
-          <a
-            href="https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_1_commands/part_1.1_greet.rb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="tab-link"
-          >
-            View on GitHub →
-          </a>
+          {activeTab !== 'output' && (
+            <a
+              href="https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_1_commands/part_1.1_greet.rb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="tab-link"
+            >
+              View on GitHub →
+            </a>
+          )}
         </div>
 
         <div className="tab-content">
