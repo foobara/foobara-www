@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaGithub, FaYoutube } from 'react-icons/fa'
 
 import McpConnectorCode from './McpConnectorCode'
 import McpConnectorCodeTypes from './McpConnectorCodeTypes'
@@ -54,7 +55,16 @@ export default function McpConnectorDemo () {
             className="tab-link"
             style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
           >
-            View it on GitHub →
+            View it on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=_w3ZHdiJEGU"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tab-link"
+            style={{ position: 'absolute', top: '7rem', right: '0.5rem', zIndex: 10 }}
+          >
+            McpConnector Video <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaYoutube({ size: 16 })}</span>
           </a>
           {activeTab === 'commands' && (<McpConnectorCodeCommands/>)}
           {activeTab === 'types' && (<McpConnectorCodeTypes/>)}

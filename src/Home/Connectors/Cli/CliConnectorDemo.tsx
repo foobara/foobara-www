@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaGithub } from 'react-icons/fa'
 
 import CliConnectorCode from './CliConnectorCode'
 import CliConnectorCodeTypes from './CliConnectorCodeTypes'
@@ -47,7 +48,7 @@ export default function CliConnectorDemo () {
             className="tab-link"
             style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
           >
-            View on GitHub →
+            View on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
           </a>
           {activeTab === 'commands' && (<CliConnectorCodeCommands/>)}
           {activeTab === 'types' && (<CliConnectorCodeTypes/>)}
