@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import CliConnectorDemo from './Cli/CliConnectorDemo'
 import McpConnectorDemo from './Mcp/McpConnectorDemo'
 import RackConnectorDemo from './Rack/RackConnectorDemo'
+import RailsConnectorDemo from './Rails/RailsConnectorDemo'
 import '../../Home.css'
 
 export default function ConnectorsDemos () {
@@ -30,14 +31,12 @@ export default function ConnectorsDemos () {
         >
           Rack
         </button>
-        <a
-          href="https://github.com/foobara/rails-command-connector"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="connector-button"
+        <button
+          className={`connector-button ${activeConnector === 'rails' ? 'active' : ''}`}
+          onClick={() => { setActiveConnector('rails') }}
         >
           Rails
-        </a>
+        </button>
         <a
           href="https://github.com/foobara/resque-connector"
           target="_blank"
@@ -76,5 +75,6 @@ export default function ConnectorsDemos () {
     {activeConnector === 'cli' && <CliConnectorDemo/>}
     {activeConnector === 'mcp' && <McpConnectorDemo/>}
     {activeConnector === 'rack' && <RackConnectorDemo/>}
+    {activeConnector === 'rails' && <RailsConnectorDemo/>}
   </>)
 }

@@ -298,7 +298,7 @@ section h2 {
 }
 
 .meme-text-foobara {
-  top: 5%;
+  top: 7%;
   left: 15%;
 }
 
@@ -306,7 +306,7 @@ section h2 {
   content: '';
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 40%;
   width: 5px;
   height: 40px;
   background-color: var(--foob-green-dark);
@@ -317,7 +317,7 @@ section h2 {
   content: '';
   position: absolute;
   top: calc(100% + 40px);
-  left: 50%;
+  left: 40%;
   width: 0;
   height: 0;
   border-left: 12px solid transparent;
@@ -364,7 +364,7 @@ section h2 {
   transform: translateX(-50%);
 }
 
-.meme-text-mcp {
+.meme-text-mcp, .meme-text-rails {
   top: 25%;
   right: 10%;
   text-shadow:
@@ -378,7 +378,12 @@ section h2 {
     0 2px 0 var(--foob-green-dark);
 }
 
-.meme-text-mcp::before {
+.meme-text-rails {
+  top: 18%;
+  right: 1%;
+}
+
+.meme-text-mcp::before, .meme-text-rails::before {
   content: '';
   position: absolute;
   top: 100%;
@@ -389,7 +394,12 @@ section h2 {
   transform: translateX(-50%);
 }
 
-.meme-text-mcp::after {
+.meme-text-rails::before {
+  height: 80px;
+  left: 70%;
+}
+
+.meme-text-mcp::after, .meme-text-rails::after {
   content: '';
   position: absolute;
   top: calc(100% + 40px);
@@ -400,6 +410,12 @@ section h2 {
   border-right: 12px solid transparent;
   border-top: 18px solid var(--foob-yellow);
   transform: translateX(-50%);
+}
+
+.meme-text-rails::after {
+  top: calc(100% + 80px);
+  height: 70px;
+  left: 70%;
 }
 
 .image-attribution {
