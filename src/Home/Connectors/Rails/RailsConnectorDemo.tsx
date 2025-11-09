@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import RailsConnectorCode1 from './RailsConnectorCode1'
 import RailsConnectorCode2 from './RailsConnectorCode2'
 import RailsConnectorCodeCommands from './RailsConnectorCodeCommands'
+import RailsConnectorCodeTypes from './RailsConnectorCodeTypes'
 import '../../../Home.css'
 
 export default function RailsConnectorDemo () {
@@ -17,6 +18,12 @@ export default function RailsConnectorDemo () {
               onClick={() => { setActiveTab('commands') } }
             >
               Commands
+            </button>
+            <button
+              className={`tab ${activeTab === 'types' ? 'active' : ''}`}
+              onClick={() => { setActiveTab('types') } }
+            >
+              Types
             </button>
             <button
               className={`tab ${activeTab === 'connector1' ? 'active' : ''}`}
@@ -49,6 +56,7 @@ export default function RailsConnectorDemo () {
 
         <div className="tab-content">
           {activeTab === 'commands' && (<RailsConnectorCodeCommands/>)}
+          {activeTab === 'types' && (<RailsConnectorCodeTypes/>)}
           {activeTab === 'connector1' && (<RailsConnectorCode1/>)}
           {activeTab === 'connector2' && (<RailsConnectorCode2/>)}
 
