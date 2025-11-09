@@ -55,7 +55,7 @@ export default function McpConnectorDemo () {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="tab-link"
-                style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
+                style={{ position: 'absolute', top: '3.5rem', right: '0.75rem', zIndex: 10 }}
               >
                 View it on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
               </a>
@@ -64,7 +64,7 @@ export default function McpConnectorDemo () {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="tab-link"
-                style={{ position: 'absolute', top: '7rem', right: '0.5rem', zIndex: 10 }}
+                style={{ position: 'absolute', top: '7rem', right: '0.75rem', zIndex: 10 }}
               >
                 McpConnector Video <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaYoutube({ size: 16 })}</span>
               </a>
