@@ -563,8 +563,8 @@ section h2 {
 
 .tab-link {
   padding: 0.5rem 1rem;
-  background-color: var(--foob-green-dark);
-  border: 2px solid var(--foob-green-dark);
+  background-color: var(--foob-brown-dark);
+  border: 2px solid var(--foob-brown-dark);
   border-radius: 20px;
   cursor: pointer;
   font-size: 0.9rem;

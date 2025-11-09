@@ -44,17 +44,18 @@ export default function RailsConnectorDemo () {
               Output
             </button>
           </div>
+        </div>
+
+        <div className="tab-content" style={{ position: 'relative' }}>
           <a
             href="https://github.com/foobara/rails-command-connector"
             target="_blank"
             rel="noopener noreferrer"
             className="tab-link"
+            style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
           >
             View on GitHub →
           </a>
-        </div>
-
-        <div className="tab-content">
           {activeTab === 'commands' && (<RailsConnectorCodeCommands/>)}
           {activeTab === 'types' && (<RailsConnectorCodeTypes/>)}
           {activeTab === 'connector1' && (<RailsConnectorCode1/>)}

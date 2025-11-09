@@ -44,17 +44,18 @@ export default function McpConnectorDemo () {
               Output
             </button>
           </div>
+        </div>
+
+        <div className="tab-content" style={{ position: 'relative' }}>
           <a
             href="https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector"
             target="_blank"
             rel="noopener noreferrer"
             className="tab-link"
+            style={{ position: 'absolute', top: '3.5rem', right: '0.5rem', zIndex: 10 }}
           >
-            GitHub →
+            View it on GitHub →
           </a>
-        </div>
-
-        <div className="tab-content">
           {activeTab === 'commands' && (<McpConnectorCodeCommands/>)}
           {activeTab === 'types' && (<McpConnectorCodeTypes/>)}
           {activeTab === 'setup' && (<McpConnectorCodeSetup/>)}
