@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa'
 
 import '../../../Home.css'
 
-interface TabInfo {
+export interface TabInfo {
   tabLabel: string
   tabId: string
   html: string
@@ -13,7 +13,7 @@ interface TabInfo {
   videoLink: string | undefined
 }
 
-export default function CliConnectorDemo (tabs: TabInfo[]) {
+export function CliConnectorDemo (tabs: TabInfo[]) {
   const [activeTabId, setActiveTabId] = useState('connector')
 
   const activeTab: TabInfo = tabs.find((tab) => {
