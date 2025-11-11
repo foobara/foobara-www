@@ -1,8 +1,4 @@
-import React from 'react'
-
-import '../../../syntax.css'
-
-const html = `<span class="k">class</span> <span class="nc">Capybara</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Entity</span>
+export default `<span class="k">class</span> <span class="nc">Capybara</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Entity</span>
   <span class="nf">description</span> <span class="s2">"A giant semi-aquatic rodent!"</span>
 
   <span class="nf">attributes</span> <span class="k">do</span>
@@ -14,9 +10,4 @@ const html = `<span class="k">class</span> <span class="nc">Capybara</span> <spa
   <span class="k">end</span>
 
   <span class="nf">primary_key</span> <span class="ss">:id</span>
-<span class="k">end</span>
-`
-
-export default function CliConnectorCodeTypes () {
-  return <pre><code dangerouslySetInnerHTML={{ __html: html }} /></pre>
-}
+<span class="k">end</span>`

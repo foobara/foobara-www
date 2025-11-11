@@ -1,0 +1,44 @@
+export default `$ ./capy-cafe help
+Usage: capy-cafe [GLOBAL_OPTIONS] [ACTION] [COMMAND_OR_TYPE] [COMMAND_INPUTS]
+
+Available commands:
+
+  CreateCapybara   Creates a giant semi-aquatic rodent!
+  IncrementAge     A trip around the sun!
+  FindCapybara     Just tell us who you want to find!
+
+$ ./capy-cafe help FindCapybara
+Usage: capy-cafe [GLOBAL_OPTIONS] FindCapybara [COMMAND_INPUTS]
+
+Just tell us who you want to find!
+
+Command inputs:
+
+ -i, --id ID                      Required
+
+$ ./capy-cafe FindCapybara --id 3
+id: 3,
+name: "Basil",
+nickname: "baz",
+age: 301
+$ ./capy-cafe help IncrementAge
+Usage: capy-cafe [GLOBAL_OPTIONS] IncrementAge [COMMAND_INPUTS]
+
+A trip around the sun!
+
+Command inputs:
+
+ -c, --capybara CAPYBARA          Required
+
+$ ./capy-cafe IncrementAge --capybara 3
+id: 3,
+name: "Basil",
+nickname: "baz",
+age: 302
+$ ./capy-cafe FindCapybara --id 3
+id: 3,
+name: "Basil",
+nickname: "baz",
+age: 302
+$
+`
