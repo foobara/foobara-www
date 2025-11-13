@@ -1,55 +1,26 @@
-import React, { useState } from 'react'
-import { FaGithub } from 'react-icons/fa'
+import React from 'react'
 
-import ConnectorDemo from './ConnectorDemo'
-import TabInfo from '../'
+import { ConnectorDemo, type TabGroup } from '../ConnectorDemo'
 
 import CliConnectorCode from './CliConnectorCode'
 import CliConnectorCodeTypes from './CliConnectorCodeTypes'
 import CliConnectorCodeCommands from './CliConnectorCodeCommands'
-import CliConnectorCodeOutput from "./CliConnectorCodeOutput";
+import CliConnectorCodeOutput from './CliConnectorCodeOutput'
 
 import '../../../Home.css'
 
 export default function CliConnectorDemo () {
-  const [activeTab, setActiveTab] = useState('connector')
+  const tabGroup: TabGroup = {
+    integrationId: 'cli',
+    integrationName: 'CLI',
+    githubLink: 'https://github.com/foobara/sh-cli-connector?tab=readme-ov-file#foobarashcliconnector',
+    tabs: [
+      { tabId: 'commands', tabLabel: 'Commands', html: CliConnectorCodeCommands },
+      { tabId: 'types', tabLabel: 'Types', html: CliConnectorCodeTypes },
+      { tabId: 'connector', tabLabel: 'Connector', html: CliConnectorCode },
+      { tabId: 'output', tabLabel: 'Output', html: CliConnectorCodeOutput }
+    ]
+  }
 
-  const tabInfo: 
-
-  return (<div className="example-with-image">
-      <div className="example-container wide">
-        <div className="tabs">
-          <div>
-            <button
-              className={`tab ${activeTab === 'commands' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('commands') } }
-            >
-              Commands
-            </button>
-            <button
-              className={`tab ${activeTab === 'types' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('types') } }
-            >
-              Types
-            </button>
-            <button
-              className={`tab ${activeTab === 'connector' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('connector') } }
-            >
-              CLI Connector
-            </button>
-            <button
-              className={`tab ${activeTab === 'output' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('output') } }
-            >
-              Output
-            </button>
-          </div>
-        </div>
-
-        <div className="tab-content" style={{ position: 'relative' }}>
-          <ConnectorDemo />
-        </div>
-      </div>
-    </div>)
+  return (<ConnectorDemo tabGroup={tabGroup}/>)
 }

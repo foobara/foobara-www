@@ -10,34 +10,32 @@ import '../../Home.css'
 export default function ConnectorsDemos () {
   const [activeConnector, setActiveConnector] = useState('cli')
 
+  const tabs = {
+    cli: 'CLI',
+    mcp: 'MCP',
+    rack: 'Rack',
+    rails: 'Rails' /* ,
+    resque: "Resque",
+    resque_scheduler: "Resque Scheduler",
+    agent: "Foobara Agent",
+    agent_cli: "Foobara Agent CLI" */
+  }
+
+  const tabButtons = Object.entries(tabs).map(([tabId, tabLabel]) => {
+    return (<button
+      key={tabId}
+      className={`connector-button ${activeConnector === tabId ? 'active' : ''}`}
+      onClick={() => { setActiveConnector(tabId) }}
+    >
+      {tabLabel}
+    </button>)
+  })
+
   return (<>
     <div className="connector-selector">
       <h3 className="connector-selector-label">Explore Connectors</h3>
       <div className="connector-buttons">
-        <button
-          className={`connector-button ${activeConnector === 'cli' ? 'active' : ''}`}
-          onClick={() => { setActiveConnector('cli') }}
-        >
-          CLI
-        </button>
-        <button
-          className={`connector-button ${activeConnector === 'mcp' ? 'active' : ''}`}
-          onClick={() => { setActiveConnector('mcp') }}
-        >
-          MCP
-        </button>
-        <button
-          className={`connector-button ${activeConnector === 'rack' ? 'active' : ''}`}
-          onClick={() => { setActiveConnector('rack') }}
-        >
-          Rack
-        </button>
-        <button
-          className={`connector-button ${activeConnector === 'rails' ? 'active' : ''}`}
-          onClick={() => { setActiveConnector('rails') }}
-        >
-          Rails
-        </button>
+        {tabButtons}
         <a
           href="https://github.com/foobara/resque-connector"
           target="_blank"

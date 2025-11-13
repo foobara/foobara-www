@@ -1,30 +1,35 @@
 import React, { useState } from 'react'
 import { FaGithub } from 'react-icons/fa'
 
-import '../../../Home.css'
+import '../../Home.css'
+
+export interface TabGroup {
+  tabs: TabInfo[]
+  integrationId: string
+  integrationName: string
+  githubLink?: string | undefined
+  videoLink?: string | undefined
+}
 
 export interface TabInfo {
   tabLabel: string
   tabId: string
   html: string
-  integrationName: string
-  integrationId: string
-  githubLink: string | undefined
-  videoLink: string | undefined
 }
 
-export function CliConnectorDemo (tabs: TabInfo[]) {
+export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
   const [activeTabId, setActiveTabId] = useState('connector')
 
+  const tabs = tabGroup.tabs
   const activeTab: TabInfo = tabs.find((tab) => {
     return tab.tabId === activeTabId
   }) as unknown as TabInfo
 
-  const githubLink = activeTab.githubLink
+  const githubLink = tabGroup.githubLink
 
   const hasGithubLink: boolean = typeof githubLink === 'string'
 
-  const classes: string = `meme-text-meme ${activeTab.integrationId}`
+  const classes: string = `meme-text-meme ${tabGroup.integrationId}`
 
   return (<div className="example-with-image">
     <div className="example-container wide">
@@ -66,7 +71,7 @@ export function CliConnectorDemo (tabs: TabInfo[]) {
         className="capy-and-dog-image"
       />
       <div className="meme-text meme-text-foobara">Foobara</div>
-      <div className={classes}>{activeTab.integrationName}</div>
+      <div className={classes}>{tabGroup.integrationName}</div>
       <p className="image-attribution">
         <a
           href="https://linktr.ee/darkwingswildlife"
