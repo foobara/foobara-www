@@ -14,6 +14,7 @@ export default function CliConnectorDemo () {
     integrationId: 'cli',
     integrationName: 'CLI',
     githubLink: 'https://github.com/foobara/sh-cli-connector?tab=readme-ov-file#foobarashcliconnector',
+    hideLinksOn: ['output'],
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: CliConnectorCodeCommands },
       { tabId: 'types', tabLabel: 'Types', html: CliConnectorCodeTypes },

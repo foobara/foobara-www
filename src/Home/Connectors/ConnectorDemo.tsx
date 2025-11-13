@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaYoutube } from 'react-icons/fa'
 
 import '../../Home.css'
 
@@ -9,6 +9,7 @@ export interface TabGroup {
   integrationName: string
   githubLink?: string | undefined
   videoLink?: string | undefined
+  hideLinksOn?: string[] | undefined
 }
 
 export interface TabInfo {
@@ -25,10 +26,16 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
     return tab.tabId === activeTabId
   }) as unknown as TabInfo
 
+  const hideLinksOn = tabGroup.hideLinksOn ?? []
+
   const githubLink = tabGroup.githubLink
+  const videoLink = tabGroup.videoLink
 
-  const hasGithubLink: boolean = typeof githubLink === 'string'
+  const includeLinks = !hideLinksOn.includes(activeTabId)
+  const showGithubLink: boolean = includeLinks && typeof githubLink === 'string'
+  const showVideoLink: boolean = includeLinks && typeof videoLink === 'string'
 
+  console.log({ activeTabId, includeLinks, hideLinksOn })
   const classes: string = `meme-text-meme ${tabGroup.integrationId}`
 
   return (<div className="example-with-image">
@@ -48,18 +55,28 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
       </div>
 
       <div className="tab-content" style={{ position: 'relative' }}>
-        {hasGithubLink && (
+        {showGithubLink && (
             <a
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
               className="tab-link"
-              style={{ position: 'absolute', top: '3.5rem', right: '0.75rem', zIndex: 10 }}
+              style={{ position: 'absolute', top: '2.9rem', right: '0.75rem', zIndex: 10 }}
             >
               View on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
             </a>
-        )
-        }
+        )}
+        {showVideoLink && (
+            <a
+              href={videoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="tab-link"
+              style={{ position: 'absolute', top: '5.8rem', right: '0.75rem', zIndex: 10 }}
+            >
+              Watch Video <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaYoutube({ size: 16 })}</span>
+            </a>
+        )}
         <pre><code dangerouslySetInnerHTML={{ __html: activeTab.html }} /></pre>
       </div>
     </div>
