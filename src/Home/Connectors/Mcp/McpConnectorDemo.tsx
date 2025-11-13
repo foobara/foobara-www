@@ -21,7 +21,7 @@ export default function McpConnectorDemo () {
       { tabId: 'commands', tabLabel: 'Commands', html: McpConnectorCodeCommands },
       { tabId: 'types', tabLabel: 'Types', html: McpConnectorCodeTypes },
       { tabId: 'setup', tabLabel: 'Setup', html: McpConnectorCodeSetup },
-      { tabId: 'connector', tabLabel: 'Connector', html: McpConnectorCode },
+      { tabId: 'connector', tabLabel: 'MCP Connector', html: McpConnectorCode },
       { tabId: 'output', tabLabel: 'Output', html: McpConnectorCodeOutput }
     ]
   }

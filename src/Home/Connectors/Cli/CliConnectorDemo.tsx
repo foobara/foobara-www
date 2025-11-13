@@ -18,7 +18,7 @@ export default function CliConnectorDemo () {
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: CliConnectorCodeCommands },
       { tabId: 'types', tabLabel: 'Types', html: CliConnectorCodeTypes },
-      { tabId: 'connector', tabLabel: 'Connector', html: CliConnectorCode },
+      { tabId: 'connector', tabLabel: 'CLI Connector', html: CliConnectorCode },
       { tabId: 'output', tabLabel: 'Output', html: CliConnectorCodeOutput }
     ]
   }
