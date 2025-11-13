@@ -7,6 +7,7 @@ export interface TabGroup {
   tabs: TabInfo[]
   integrationId: string
   integrationName: string
+  startingTab?: string | undefined
   githubLink?: string | undefined
   videoLink?: string | undefined
   hideLinksOn?: string[] | undefined
@@ -19,7 +20,8 @@ export interface TabInfo {
 }
 
 export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
-  const [activeTabId, setActiveTabId] = useState('connector')
+  const startingTab = tabGroup.startingTab ?? 'connector'
+  const [activeTabId, setActiveTabId] = useState(startingTab)
 
   const tabs = tabGroup.tabs
   const activeTab: TabInfo = tabs.find((tab) => {

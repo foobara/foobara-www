@@ -1,94 +1,30 @@
-import React, { useState } from 'react'
-import { FaGithub } from 'react-icons/fa'
+import React from 'react'
+
+import { ConnectorDemo, type TabGroup } from '../ConnectorDemo'
 
 import RailsConnectorCode1 from './RailsConnectorCode1'
 import RailsConnectorCode2 from './RailsConnectorCode2'
 import RailsConnectorCodeCommands from './RailsConnectorCodeCommands'
 import RailsConnectorCodeTypes from './RailsConnectorCodeTypes'
+import RailsConnectorCodeOutput from './RailsConnectorCodeOutput'
+
 import '../../../Home.css'
 
 export default function RailsConnectorDemo () {
-  const [activeTab, setActiveTab] = useState('connector2')
+  const tabGroup: TabGroup = {
+    integrationId: 'rails',
+    integrationName: 'Rails Router',
+    githubLink: 'https://github.com/foobara/rails-command-connector?tab=readme-ov-file#foobararailscommandconnector',
+    startingTab: 'connector2',
+    tabs: [
+      { tabId: 'commands', tabLabel: 'Commands', html: RailsConnectorCodeCommands },
+      { tabId: 'types', tabLabel: 'Types', html: RailsConnectorCodeTypes },
+      { tabId: 'connector1', tabLabel: 'Connector Option', html: RailsConnectorCode1 },
+      { tabId: 'connector2', tabLabel: 'Rails Router Option', html: RailsConnectorCode2 },
+      { tabId: 'output', tabLabel: 'Output', html: RailsConnectorCodeOutput }
+    ]
 
-  return (<div className="example-with-image">
-      <div className="example-container wide">
-        <div className="tabs">
-          <div>
-            <button
-              className={`tab ${activeTab === 'commands' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('commands') } }
-            >
-              Commands
-            </button>
-            <button
-              className={`tab ${activeTab === 'types' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('types') } }
-            >
-              Types
-            </button>
-            <button
-              className={`tab ${activeTab === 'connector1' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('connector1') } }
-            >
-              Connector Option
-            </button>
-            <button
-              className={`tab ${activeTab === 'connector2' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('connector2') } }
-            >
-              Rails Routes Option
-            </button>
-            <button
-              className={`tab ${activeTab === 'output' ? 'active' : ''}`}
-              onClick={() => { setActiveTab('output') } }
-            >
-              Output
-            </button>
-          </div>
-        </div>
+  }
 
-        <div className="tab-content" style={{ position: 'relative' }}>
-          {activeTab !== 'output' && (
-            <a
-              href="https://github.com/foobara/rails-command-connector"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="tab-link"
-              style={{ position: 'absolute', top: '3.5rem', right: '0.75rem', zIndex: 10 }}
-            >
-              View on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
-            </a>
-          )}
-          {activeTab === 'commands' && (<RailsConnectorCodeCommands/>)}
-          {activeTab === 'types' && (<RailsConnectorCodeTypes/>)}
-          {activeTab === 'connector1' && (<RailsConnectorCode1/>)}
-          {activeTab === 'connector2' && (<RailsConnectorCode2/>)}
-
-          {activeTab === 'output' && (
-            <pre><code>{`$ curl 'localhost:3000/run/Add?operand1=5&operand2=6'
-11
-`}</code></pre>
-          )}
-        </div>
-      </div>
-
-      <div className="capy-and-dog-image-container">
-        <img
-          src="/images/capy_and_dog.jpg"
-          alt="Capybara and dog"
-          className="capy-and-dog-image"
-        />
-        <div className="meme-text meme-text-foobara">Foobara</div>
-        <div className="meme-text meme-text-rails">Rails Router</div>
-        <p className="image-attribution">
-          <a
-            href="https://linktr.ee/darkwingswildlife"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dark Wings Wildlife & Education
-          </a>
-        </p>
-      </div>
-    </div>)
+  return (<ConnectorDemo tabGroup={tabGroup}/>)
 }

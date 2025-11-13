@@ -1,8 +1,4 @@
-import React from 'react'
-
-import '../../../syntax.css'
-
-const html = `<span class="k">class</span> <span class="nc">CreateCapybara</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Command</span>
+export default `<span class="k">class</span> <span class="nc">CreateCapybara</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Command</span>
   <span class="nf">description</span> <span class="s2">"Just creates a capybara!"</span>
 
   <span class="nf">inputs</span> <span class="no">Capybara</span><span class="p">.</span><span class="nf">attributes_type</span>
@@ -61,9 +57,4 @@ const html = `<span class="k">class</span> <span class="nc">CreateCapybara</span
   <span class="k">def</span> <span class="nf">increment_age</span>
     <span class="nf">capybara</span><span class="p">.</span><span class="nf">age</span> <span class="o">+=</span> <span class="mi">1</span>
   <span class="k">end</span>
-<span class="k">end</span>
-`
-
-export default function RailsConnectorCodeCommands () {
-  return <pre><code dangerouslySetInnerHTML={{ __html: html }} /></pre>
-}
+<span class="k">end</span>`
