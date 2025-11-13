@@ -63,7 +63,7 @@ export default function RackConnectorDemo () {
           className="capy-and-dog-image"
         />
         <div className="meme-text meme-text-foobara">Foobara</div>
-        <div className="meme-text meme-text-mcp">Rack</div>
+        <div className="meme-text meme-text-meme">Rack</div>
         <p className="image-attribution">
           <a
             href="https://linktr.ee/darkwingswildlife"

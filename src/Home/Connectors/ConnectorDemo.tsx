@@ -38,7 +38,7 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
   const showVideoLink: boolean = includeLinks && typeof videoLink === 'string'
 
   console.log({ activeTabId, includeLinks, hideLinksOn })
-  const classes: string = `meme-text-meme ${tabGroup.integrationId}`
+  const classes: string = `meme-text meme-text-meme meme-text-${tabGroup.integrationId}`
 
   return (<div className="example-with-image">
     <div className="example-container wide">

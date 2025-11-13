@@ -364,7 +364,7 @@ section h2 {
   transform: translateX(-50%);
 }
 
-.meme-text-mcp, .meme-text-rails {
+.meme-text-meme, .meme-text-rails {
   top: 25%;
   right: 10%;
   text-shadow:
@@ -383,7 +383,7 @@ section h2 {
   right: 1%;
 }
 
-.meme-text-mcp::before, .meme-text-rails::before {
+.meme-text-meme::before {
   content: '';
   position: absolute;
   top: 100%;
@@ -399,7 +399,7 @@ section h2 {
   left: 70%;
 }
 
-.meme-text-mcp::after, .meme-text-rails::after {
+.meme-text-meme::after {
   content: '';
   position: absolute;
   top: calc(100% + 40px);
