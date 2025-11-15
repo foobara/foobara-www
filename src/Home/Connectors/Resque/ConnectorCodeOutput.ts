@@ -1,4 +1,4 @@
-export default `$ QUEUE=* VERBOSE=1 bundle exec rake resque:work
+export default `$ QUEUE=* VERBOSE=1 rake resque:work
 *** Starting worker demo:29545:general
 *** got: (Job{general} | Foobara::CommandConnectors::ResqueConnector::CommandJob | [{"command_name" => "IncrementAge", "inputs" => {"capybara" => 1}}])
 *** done: (Job{general} | Foobara::CommandConnectors::ResqueConnector::CommandJob | [{"command_name" => "IncrementAge", "inputs" => {"capybara" => 1}}])

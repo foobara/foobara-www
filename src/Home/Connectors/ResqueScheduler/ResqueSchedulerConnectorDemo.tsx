@@ -10,16 +10,16 @@ import ConnectorCodeTypes from './ConnectorCodeTypes'
 
 import '../../../Home.css'
 
-export default function ResqueConnectorDemo () {
+export default function ResqueSchedulerConnectorDemo () {
   const tabGroup: TabGroup = {
-    integrationId: 'resque',
-    integrationName: 'Resque',
-    githubLink: 'https://github.com/foobara/resque-connector?tab=readme-ov-file#foobararesqueconnector',
-    hideLinksOn: ['setup', 'output'],
+    integrationId: 'resque-scheduler',
+    integrationName: 'Resque Scheduler',
+    githubLink: 'https://github.com/foobara/resque-scheduler-connector?tab=readme-ov-file#foobararesqueschedulerconnector',
+    hideLinksOn: ['setup'],
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: ConnectorCodeCommands },
       { tabId: 'types', tabLabel: 'Types', html: ConnectorCodeTypes },
-      { tabId: 'connector', tabLabel: 'Resque Connector', html: ConnectorCode },
+      { tabId: 'connector', tabLabel: 'Resque Scheduler Connector', html: ConnectorCode },
       { tabId: 'setup', tabLabel: 'Setup', html: ConnectorCodeSetup },
       { tabId: 'output', tabLabel: 'Output', html: ConnectorCodeOutput }
     ]

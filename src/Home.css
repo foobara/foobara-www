@@ -364,7 +364,7 @@ section h2 {
   transform: translateX(-50%);
 }
 
-.meme-text-meme, .meme-text-rails {
+.meme-text-meme {
   top: 25%;
   right: 10%;
   text-shadow:
@@ -383,6 +383,12 @@ section h2 {
   right: 1%;
 }
 
+.meme-text-resque-scheduler {
+  top: 15%;
+  left: 28%;
+  width: 90%;
+}
+
 .meme-text-meme::before {
   content: '';
   position: absolute;
@@ -397,6 +403,11 @@ section h2 {
 .meme-text-rails::before {
   height: 80px;
   left: 70%;
+}
+
+.meme-text-resque-scheduler::before {
+  left: 55%;
+  height: 60px;
 }
 
 .meme-text-meme::after {
@@ -416,6 +427,12 @@ section h2 {
   top: calc(100% + 80px);
   height: 70px;
   left: 70%;
+}
+
+.meme-text-resque-scheduler::after {
+  top: calc(100% + 60px);
+  height: 70px;
+  left: 55%;
 }
 
 .image-attribution {

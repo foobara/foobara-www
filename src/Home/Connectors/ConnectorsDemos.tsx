@@ -5,6 +5,7 @@ import McpConnectorDemo from './Mcp/McpConnectorDemo'
 import RackConnectorDemo from './Rack/RackConnectorDemo'
 import RailsConnectorDemo from './Rails/RailsConnectorDemo'
 import ResqueConnectorDemo from './Resque/ResqueConnectorDemo'
+import ResqueSchedulerConnectorDemo from './ResqueScheduler/ResqueSchedulerConnectorDemo'
 
 import '../../Home.css'
 
@@ -16,8 +17,8 @@ export default function ConnectorsDemos () {
     mcp: 'MCP',
     rack: 'Rack',
     rails: 'Rails',
-    resque: 'Resque' /*,
-    resque_scheduler: "Resque Scheduler",
+    resque: 'Resque',
+    resque_scheduler: 'Resque Scheduler' /* ,
     agent: "Foobara Agent",
     agent_cli: "Foobara Agent CLI" */
   }
@@ -37,14 +38,6 @@ export default function ConnectorsDemos () {
       <h3 className="connector-selector-label">Explore Connectors</h3>
       <div className="connector-buttons">
         {tabButtons}
-        <a
-          href="https://github.com/foobara/resque-scheduler-connector"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="connector-button"
-        >
-          Resque Scheduler
-        </a>
         <a
           href="https://github.com/foobara/agent"
           target="_blank"
@@ -69,5 +62,6 @@ export default function ConnectorsDemos () {
     {activeConnector === 'rack' && <RackConnectorDemo/>}
     {activeConnector === 'rails' && <RailsConnectorDemo/>}
     {activeConnector === 'resque' && <ResqueConnectorDemo/>}
+    {activeConnector === 'resque_scheduler' && <ResqueSchedulerConnectorDemo/>}
   </>)
 }
