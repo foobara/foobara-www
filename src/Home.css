@@ -590,6 +590,9 @@ section h2 {
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
   white-space: nowrap;
+  right: 9px;
+  z-index: 10;
+  position: absolute;
 }
 
 .tab-link:hover {
@@ -601,6 +604,56 @@ section h2 {
 /* Tab content */
 .tab-content {
   margin: 0;
+  position: relative;
+}
+
+.tab-script-link {
+  top: 9px;
+}
+
+.tab-project-link {
+  top: 56px;
+}
+
+.tab-link-video {
+  top: 103px;
+}
+
+.tab-script-link-cli-connector {
+  top: 59px;
+}
+
+.tab-project-link-cli-connector {
+  top: 106px;
+}
+
+.tab-script-link-cli-output {
+  top: 119px;
+}
+
+.tab-project-link-cli-output {
+  top: 166px;
+}
+
+.tab-script-link-mcp-output {
+  top: 139px;
+}
+
+.tab-project-link-mcp-output {
+  top: 186px;
+}
+
+.tab-link-video-mcp-output {
+  top: 233px;
+}
+
+
+.tab-link > span {
+  margin-left: 0.4rem;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 1px;
 }
 
 /* Style code sections */

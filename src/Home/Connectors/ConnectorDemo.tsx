@@ -7,6 +7,7 @@ export interface TabGroup {
   tabs: TabInfo[]
   integrationId: string
   integrationName: string
+  projectName?: string | undefined
   startingTab?: string | undefined
   githubLink?: string | undefined
   scriptGithubLink?: string | undefined
@@ -29,18 +30,18 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
     return tab.tabId === activeTabId
   }) as unknown as TabInfo
 
-  const hideLinksOn = tabGroup.hideLinksOn ?? []
+  const projectName: string = tabGroup.projectName ?? tabGroup.integrationName
 
+  const hideLinksOn = tabGroup.hideLinksOn ?? []
   const githubLink = tabGroup.githubLink
   const scriptGithubLink = tabGroup.scriptGithubLink
-  const videoLink = tabGroup.videoLink
 
+  const videoLink = tabGroup.videoLink
   const includeLinks = !hideLinksOn.includes(activeTabId)
   const showScriptGithubLink: boolean = includeLinks && typeof scriptGithubLink === 'string'
   const showGithubLink: boolean = includeLinks && typeof githubLink === 'string'
   const showVideoLink: boolean = includeLinks && typeof videoLink === 'string'
 
-  console.log({ activeTabId, includeLinks, hideLinksOn })
   const classes: string = `meme-text meme-text-meme meme-text-${tabGroup.integrationId}`
 
   return (<div className="example-with-image">
@@ -59,16 +60,15 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
         </div>
       </div>
 
-      <div className="tab-content" style={{ position: 'relative' }}>
+      <div className="tab-content">
         {showScriptGithubLink && (
             <a
               href={scriptGithubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className={`tab-link tab-script-link tab-script-link-${tabGroup.integrationId}`}
-              style={{ position: 'absolute', top: '2.9rem', right: '0.75rem', zIndex: 10 }}
+              className={`tab-link tab-script-link tab-script-link-${tabGroup.integrationId} tab-script-link-${tabGroup.integrationId}-${activeTabId}`}
             >
-              This Script on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
+              This Script on GitHub <span>{FaGithub({ size: 16 })}</span>
             </a>
         )}
         {showGithubLink && (
@@ -76,10 +76,9 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className={`tab-link tab-project-link tab-project-link-${tabGroup.integrationId}`}
-              style={{ position: 'absolute', top: '2.9rem', right: '0.75rem', zIndex: 10 }}
+              className={`tab-link tab-project-link tab-project-link-${tabGroup.integrationId} tab-project-link-${tabGroup.integrationId}-${activeTabId}`}
             >
-              {tabGroup.integrationName} on GitHub <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaGithub({ size: 16 })}</span>
+              {projectName} on GitHub <span>{FaGithub({ size: 16 })}</span>
             </a>
         )}
         {showVideoLink && (
@@ -87,10 +86,9 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
               href={videoLink}
               target="_blank"
               rel="noopener noreferrer"
-              className={`tab-link tab-link-video tab-link-video-${tabGroup.integrationId}`}
-              style={{ position: 'absolute', top: '5.8rem', right: '0.75rem', zIndex: 10 }}
+              className={`tab-link tab-link-video tab-link-video-${tabGroup.integrationId} tab-link-video-${tabGroup.integrationId}-${activeTabId}`}
             >
-              Watch Video <span style={{ marginLeft: '0.4rem', display: 'inline-block', verticalAlign: 'middle', position: 'relative', top: '1px' }}>{FaYoutube({ size: 16 })}</span>
+              Watch Video <span>{FaYoutube({ size: 16 })}</span>
             </a>
         )}
         <pre><code dangerouslySetInnerHTML={{ __html: activeTab.html }} /></pre>

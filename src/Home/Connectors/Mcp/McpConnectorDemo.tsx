@@ -14,9 +14,11 @@ export default function McpConnectorDemo () {
   const tabGroup: TabGroup = {
     integrationId: 'mcp',
     integrationName: 'MCP',
+    projectName: 'McpConnector',
+    scriptGithubLink: 'https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector',
     githubLink: 'https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector',
     videoLink: 'https://www.youtube.com/watch?v=_w3ZHdiJEGU',
-    hideLinksOn: ['output', 'setup'],
+    hideLinksOn: ['setup'],
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: McpConnectorCodeCommands },
       { tabId: 'types', tabLabel: 'Types', html: McpConnectorCodeTypes },

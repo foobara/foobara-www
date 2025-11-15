@@ -13,6 +13,7 @@ export default function RackConnectorDemo () {
     integrationId: 'rack',
     integrationName: 'Rack',
     githubLink: 'https://github.com/foobara/rack-connector?tab=readme-ov-file#example',
+    hideLinksOn: ['output'],
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: RackConnectorCodeCommands },
       { tabId: 'connector', tabLabel: 'Rack Connector', html: RackConnectorCode },
