@@ -13,7 +13,7 @@ export default function CliConnectorDemo () {
   const tabGroup: TabGroup = {
     integrationId: 'cli',
     integrationName: 'CLI',
-    projectName: 'CliConnector',
+    projectName: 'ShCliConnector',
     githubLink: 'https://github.com/foobara/sh-cli-connector?tab=readme-ov-file#foobarashcliconnector',
     scriptGithubLink: 'https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_5_command_connectors/part_1_cli_command_connector.rb',
     tabs: [

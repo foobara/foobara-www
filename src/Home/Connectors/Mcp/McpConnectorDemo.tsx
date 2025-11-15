@@ -15,7 +15,7 @@ export default function McpConnectorDemo () {
     integrationId: 'mcp',
     integrationName: 'MCP',
     projectName: 'McpConnector',
-    scriptGithubLink: 'https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector',
+    scriptGithubLink: 'https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_5_command_connectors/part_7_mcp_connector.rb',
     githubLink: 'https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector',
     videoLink: 'https://www.youtube.com/watch?v=_w3ZHdiJEGU',
     hideLinksOn: ['setup'],

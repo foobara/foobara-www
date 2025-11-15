@@ -12,6 +12,7 @@ export default function RackConnectorDemo () {
   const tabGroup: TabGroup = {
     integrationId: 'rack',
     integrationName: 'Rack',
+    projectName: 'RackConnector',
     githubLink: 'https://github.com/foobara/rack-connector?tab=readme-ov-file#example',
     hideLinksOn: ['output'],
     tabs: [
@@ -19,7 +20,6 @@ export default function RackConnectorDemo () {
       { tabId: 'connector', tabLabel: 'Rack Connector', html: RackConnectorCode },
       { tabId: 'output', tabLabel: 'Output', html: RackConnectorCodeOutput }
     ]
-
   }
 
   return (<ConnectorDemo tabGroup={tabGroup}/>)

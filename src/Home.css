@@ -647,6 +647,29 @@ section h2 {
   top: 233px;
 }
 
+.tab-script-link-resque-connector {
+  top: 49px;
+}
+
+.tab-project-link-resque-connector {
+  top: 96px;
+}
+
+.tab-script-link-resque-output {
+  top: 239px;
+}
+
+.tab-project-link-resque-output {
+  top: 286px;
+}
+
+.tab-script-link-resque-scheduler-setup {
+  top: 49px;
+}
+
+.tab-project-link-resque-scheduler-setup {
+  top: 96px;
+}
 
 .tab-link > span {
   margin-left: 0.4rem;
@@ -679,6 +702,7 @@ section h2 {
   overflow-x: auto;
   background-color: #000;
   color: #d4d4d4;
+  min-height: 7rem;
 }
 
 .tab-content > pre code {

@@ -14,6 +14,7 @@ export default function RailsConnectorDemo () {
   const tabGroup: TabGroup = {
     integrationId: 'rails',
     integrationName: 'Rails Router',
+    projectName: 'RailsCommandConnector',
     githubLink: 'https://github.com/foobara/rails-command-connector?tab=readme-ov-file#foobararailscommandconnector',
     startingTab: 'connector2',
     tabs: [

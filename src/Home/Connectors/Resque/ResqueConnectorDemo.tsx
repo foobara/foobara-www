@@ -14,8 +14,10 @@ export default function ResqueConnectorDemo () {
   const tabGroup: TabGroup = {
     integrationId: 'resque',
     integrationName: 'Resque',
+    projectName: 'ResqueConnector',
+    scriptGithubLink: 'https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_5_command_connectors/part_5c_async_command_connector.rb',
     githubLink: 'https://github.com/foobara/resque-connector?tab=readme-ov-file#foobararesqueconnector',
-    hideLinksOn: ['setup', 'output'],
+    hideLinksOn: ['setup'],
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: ConnectorCodeCommands },
       { tabId: 'types', tabLabel: 'Types', html: ConnectorCodeTypes },
