@@ -15,6 +15,7 @@ export default function ResqueSchedulerConnectorDemo () {
     integrationId: 'resque-scheduler',
     integrationName: 'Resque Scheduler',
     githubLink: 'https://github.com/foobara/resque-scheduler-connector?tab=readme-ov-file#foobararesqueschedulerconnector',
+    scriptGithubLink: 'https://github.com/foobara/resque-scheduler-connector?tab=readme-ov-file#foobararesqueschedulerconnector',
     hideLinksOn: ['setup'],
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: ConnectorCodeCommands },
