@@ -11,6 +11,7 @@ import Docs from './Docs'
 import Videos from './Videos'
 import Contact from './Contact'
 import FoobArticles from './FoobArticles'
+import HelpFoobara from './HelpFoobara'
 
 function App () {
   return (
@@ -19,6 +20,7 @@ function App () {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/docs" element={<Docs />} />
+        <Route path="/help-foobara" element={<HelpFoobara />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<FoobArticles />} />

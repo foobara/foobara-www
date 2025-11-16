@@ -44,6 +44,14 @@ const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
+            to="/help-foobara"
+            end
+            className={activeClassName}>
+            Help Foobara!
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/contact"
             end
             className={activeClassName}>
