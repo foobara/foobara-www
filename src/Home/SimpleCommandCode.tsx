@@ -3,7 +3,9 @@ import React from 'react'
 import '../syntax.css'
 
 const html = `<span class="k">class</span> <span class="nc">Greet</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Command</span>
-  <span class="nf">inputs</span> <span class="p">{</span> <span class="nf">who</span> <span class="ss">:string</span><span class="p">,</span> <span class="ss">default: </span><span class="s2">"World"</span> <span class="p">}</span>
+  <span class="nf">inputs</span> <span class="k">do</span>
+    <span class="nf">who</span> <span class="ss">:string</span><span class="p">,</span> <span class="ss">default: </span><span class="s2">"World"</span>
+  <span class="k">end</span>
   <span class="nf">result</span> <span class="ss">:string</span>
 
   <span class="k">def</span> <span class="nf">execute</span>
