@@ -760,37 +760,172 @@ section h2 {
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .Home {
+    padding: 0 1rem 2rem;
+  }
+
+  .hero-section {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.5rem;
+  }
+
+  .example-section {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: left;
+  }
+
+  .example-container {
+    margin: 0;
+  }
+
+  .example-container.wide {
+    margin: 0;
+  }
+
+  .connector-selector {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-left: 0;
+  }
+
+  .connector-buttons {
+    flex-wrap: nowrap;
+  }
+
+  .tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+  }
+
+  .tabs > div {
+    flex-wrap: nowrap;
+  }
+
+  section {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  section.example-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section.example-section h2 {
+    align-self: center;
+  }
+
+  .feature-group, .benefits-list, .tools-list {
+    justify-content: center;
+  }
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero-content h2 {
     font-size: 1.5rem;
   }
-  
+
   .feature-group, .benefits-list, .tools-list {
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .feature, .benefit-item, .tool-item {
     min-width: auto;
   }
-  
+
   .hero-cta, .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cta-button {
     width: 100%;
     max-width: 300px;
     margin-bottom: 1rem;
   }
-  
+
   .operator {
     margin: 1rem 0;
     font-size: 2.5rem;
+  }
+
+  .example-container {
+    width: 610px;
+  }
+
+  .example-container.wide {
+    width: 770px;
+  }
+
+  .baby-capybara-bottle-image-container {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .baby-capybara-bottle-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .baby-capybara-bottle-side h2 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .capy-and-dog-image {
+    width: auto;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .capy-and-dog-image-container {
+    margin: 0 auto;
+  }
+
+  .example-with-image {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .baby-capybara-bottle-side {
+    align-items: center;
+  }
+
+  .example-container,
+  .example-container.wide {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .baby-capybara-bottle-image-container,
+  .baby-capybara-bottle-image {
+    max-width: 400px;
+  }
+
+  .example-container,
+  .example-container.wide {
+    align-self: center;
+  }
+
+  .example-section {
+    text-align: center;
   }
 }

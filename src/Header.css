@@ -4,7 +4,23 @@
   padding: 1rem 0;
 }
 
-.nav ul {
+.hamburger {
+  display: none;
+  background: var(--foob-green-dark);
+  border: none;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1001;
+}
+
+.hamburger:hover {
+  background-color: var(--foob-green-light);
+}
+
+.nav-menu {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -64,21 +80,92 @@
   background-color: var(--foob-green-light);
 }
 
-@media (max-width: 768px) {
-  .nav ul {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 1024px) {
+  .header {
+    padding: 0.5rem 1rem;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 4rem;
   }
-  
+
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 1001;
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: var(--foob-yellow);
+    width: 80%;
+    max-width: 350px;
+    height: 100vh;
+    padding: 4rem 1rem 1rem;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
   .nav li {
     margin-right: 0;
     margin-bottom: 10px;
     width: 100%;
-    max-width: 300px;
   }
-  
+
   .nav a {
     text-align: center;
     width: 100%;
+    display: block;
+  }
+
+  .nav .header-icon {
+    display: block;
+    width: 100%;
+  }
+
+  .nav .header-icon a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .nav-menu {
+    padding: 3rem 1rem 4rem;
+    padding-top: 5px;
+  }
+
+  .nav li {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav a {
+    padding: 0.8rem 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  .nav .header-icon a {
+    padding: 0.8rem 1.1rem;
   }
 }

@@ -31,6 +31,12 @@ body {
   background-color: var(--foob-yellow);
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
 .videos-list {
   display: flex;
   flex-direction: column;
@@ -113,6 +119,8 @@ body {
 
 .App {
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .App-logo {
