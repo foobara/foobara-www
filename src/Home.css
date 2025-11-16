@@ -383,12 +383,6 @@ section h2 {
   right: 1%;
 }
 
-.meme-text-resque-scheduler {
-  top: 15%;
-  left: 28%;
-  width: 90%;
-}
-
 .meme-text-meme::before {
   content: '';
   position: absolute;
@@ -403,11 +397,6 @@ section h2 {
 .meme-text-rails::before {
   height: 80px;
   left: 70%;
-}
-
-.meme-text-resque-scheduler::before {
-  left: 55%;
-  height: 60px;
 }
 
 .meme-text-meme::after {
@@ -429,10 +418,44 @@ section h2 {
   left: 70%;
 }
 
+.meme-text-resque-scheduler {
+  top: 15%;
+  left: 28%;
+  width: 90%;
+}
+
+.meme-text-resque-scheduler::before {
+  left: 55%;
+  height: 60px;
+}
+
 .meme-text-resque-scheduler::after {
   top: calc(100% + 60px);
   height: 70px;
   left: 55%;
+}
+
+.meme-text-agent {
+  top: 80%;
+  left: 13%;
+  width: 90%;
+}
+
+.meme-text-agent::before {
+  background-color: var(--foob-green-dark);
+  top: -105%;
+  left: 55%;
+  height: 40px;
+}
+
+.meme-text-agent::after {
+  top: calc(100% + 60px);
+  height: 70px;
+  left: 55%;
+  top: -305%;
+  border-top: none;
+  border-bottom: 18px solid var(--foob-green-dark);
+  transform: translateX(-50%);
 }
 
 .image-attribution {
@@ -669,6 +692,30 @@ section h2 {
 
 .tab-project-link-resque-scheduler-setup {
   top: 96px;
+}
+
+.tab-script-link-agent-commands {
+  top: 19px;
+}
+
+.tab-project-link-agent-commands {
+  top: 66px;
+}
+
+.tab-link-video-agent-commands {
+  top: 156px;
+}
+
+.tab-script-link-agent-connector {
+  top: 109px;
+}
+
+.tab-project-link-agent-connector {
+  top: 156px;
+}
+
+.tab-link-video-agent-connector {
+  top: 203px;
 }
 
 .tab-link > span {
