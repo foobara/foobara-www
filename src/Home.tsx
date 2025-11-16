@@ -16,7 +16,7 @@ function Home () {
 
       <section className="hero-explanation">
         <p>
-          Write your domain logic as Foobara commands and <strong>automatically get a Ruby or Typescript SDK
+          Write your domain logic as Foobara commands and <strong>automatically get a Ruby or TypeScript SDK
           with no additional work!</strong> <strong>Easily integrate</strong> those commands
           with <strong>CLI</strong>, <strong>HTTP</strong>, <strong>MCP</strong>, <strong>AI agents</strong>, <strong>async job queues/schedulers</strong>...
           whatever integration you can think of. And also automatically <strong>be forward compatible with integrations
@@ -47,7 +47,7 @@ function Home () {
           <div className="feature">
             <h3>Command-centric</h3>
             <ul>
-              <li>Domain operation are encapsulated and composable</li>
+              <li>Domain operations are encapsulated and composable</li>
               <li>Commands serve as the public interface to your domains</li>
             </ul>
           </div>
@@ -118,7 +118,7 @@ function Home () {
 
           <div className="tool-item">
             <h3>Remote Commands</h3>
-            <p>Call commands in Typescript or Ruby across system boundaries with the same interface as local Ruby commands.</p>
+            <p>Call commands in TypeScript or Ruby across system boundaries with the same interface as local Ruby commands.</p>
           </div>
 
           <div className="tool-item">
@@ -143,7 +143,7 @@ function Home () {
 
           <div className="tool-item">
             <h3>Code Generators</h3>
-            <p>Generate various Foobara components, and even Ruby and Typescript/React projects from foobara manifest metadata</p>
+            <p>Generate various Foobara components, and even Ruby and TypeScript/React projects from foobara manifest metadata.</p>
           </div>
         </div>
       </section>
