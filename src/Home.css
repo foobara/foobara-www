@@ -798,7 +798,6 @@ section h2 {
   }
 
   .tabs {
-    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     flex-wrap: nowrap;
   }
