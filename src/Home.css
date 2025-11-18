@@ -223,6 +223,14 @@ section h2 {
   margin: 3rem auto 0;
 }
 
+.example-section.generators-section {
+  margin-top: 0;
+}
+
+.example-section.generators-section h2 {
+  margin-top: 0;
+}
+
 .example-section h2 {
   margin-bottom: 1.5rem;
 }
@@ -486,6 +494,10 @@ section h2 {
   width: 770px;
 }
 
+.example-container.medium {
+  width: 673px;
+}
+
 /* Connector selector */
 .connector-selector {
   display: flex;
@@ -497,7 +509,7 @@ section h2 {
 
 .connector-selector-label {
   color: var(--foob-green-dark);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
@@ -872,6 +884,10 @@ section h2 {
 
   .example-container.wide {
     width: 770px;
+  }
+
+  .example-container.medium {
+    width: 673px;
   }
 
   .baby-capybara-bottle-image-container {

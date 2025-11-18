@@ -13,6 +13,8 @@ export interface TabGroup {
   scriptGithubLink?: string | undefined
   videoLink?: string | undefined
   hideLinksOn?: string[] | undefined
+  hideImage?: boolean | undefined
+  width?: 'wide' | 'medium' | undefined
 }
 
 export interface TabInfo {
@@ -43,9 +45,12 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
   const showVideoLink: boolean = includeLinks && typeof videoLink === 'string'
 
   const classes: string = `meme-text meme-text-meme meme-text-${tabGroup.integrationId}`
+  const showImage = tabGroup.hideImage == null || !tabGroup.hideImage
+  const widthClass = tabGroup.width != null ? ` ${tabGroup.width}` : ' wide'
+  const containerClasses = `example-container${widthClass}`
 
   return (<div className="example-with-image">
-    <div className="example-container wide">
+    <div className={containerClasses}>
       <div className="tabs">
         <div>
           {tabs.map((tab) => {
@@ -95,23 +100,25 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
       </div>
     </div>
 
-    <div className="capy-and-dog-image-container">
-      <img
-        src="/images/capy_and_dog.jpg"
-        alt="Capybara and dog"
-        className="capy-and-dog-image"
-      />
-      <div className="meme-text meme-text-foobara">Foobara</div>
-      <div className={classes}>{tabGroup.integrationName}</div>
-      <p className="image-attribution">
-        <a
-          href="https://linktr.ee/darkwingswildlife"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Dark Wings Wildlife & Education
-        </a>
-      </p>
-    </div>
+    {showImage && (
+      <div className="capy-and-dog-image-container">
+        <img
+          src="/images/capy_and_dog.jpg"
+          alt="Capybara and dog"
+          className="capy-and-dog-image"
+        />
+        <div className="meme-text meme-text-foobara">Foobara</div>
+        <div className={classes}>{tabGroup.integrationName}</div>
+        <p className="image-attribution">
+          <a
+            href="https://linktr.ee/darkwingswildlife"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dark Wings Wildlife & Education
+          </a>
+        </p>
+      </div>
+    )}
   </div>)
 }

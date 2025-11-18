@@ -4,6 +4,7 @@ import './Home.css'
 
 import SimpleCommandCodeDemo from './Home/SimpleCommandCodeDemo'
 import ConnectorsDemos from './Home/Connectors/ConnectorsDemos'
+import GeneratorsDemo from './Home/Generators/GeneratorsDemo'
 
 function Home () {
   return (
@@ -30,6 +31,11 @@ function Home () {
 
       <section className="example-section">
         <ConnectorsDemos/>
+      </section>
+
+      <section className="example-section generators-section">
+        <h2>Code Generators!</h2>
+        <GeneratorsDemo/>
       </section>
 
       <section className="diagram-section">
