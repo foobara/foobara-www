@@ -15,9 +15,9 @@ export default function AgentDemo () {
     integrationId: 'agent',
     integrationName: 'Foobara::Agent',
     githubLink: 'https://github.com/foobara/agent?tab=readme-ov-file#foobaraagent',
-    scriptGithubLink: 'https://github.com/foobara/agent/blob/main/example_scripts/capybaras_agent_script.rb',
+    scriptGithubLink: 'https://github.com/foobara/agent/blob/main/example_scripts/capybaras_agent_script_result_type.rb',
     videoLink: 'https://www.youtube.com/watch?v=uFRKk_nnDiE',
-    hideLinksOn: ['setup'],
+    hideLinksOn: ['output', 'setup'],
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: ConnectorCodeCommands },
       { tabId: 'types', tabLabel: 'Types', html: ConnectorCodeTypes },

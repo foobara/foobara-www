@@ -16,7 +16,9 @@ export default function RailsConnectorDemo () {
     integrationName: 'Rails Router',
     projectName: 'RailsCommandConnector',
     githubLink: 'https://github.com/foobara/rails-command-connector?tab=readme-ov-file#foobararailscommandconnector',
+    scriptGithubLink: 'https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_5_command_connectors/part_4_rails_connector_router_dsl.rb',
     startingTab: 'connector2',
+    hideLinksOn: ['output'],
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: RailsConnectorCodeCommands },
       { tabId: 'types', tabLabel: 'Types', html: RailsConnectorCodeTypes },

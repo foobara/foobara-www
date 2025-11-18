@@ -21,6 +21,11 @@ pre code {
     color: #89CFF0;
   }
 
+  .kp, .mi {
+    color: #89CFF0; /* lighter green */
+    font-weight: bold;
+  }
+
   /* special keyword: self */
   .k-self {
     color: #89CFF0;

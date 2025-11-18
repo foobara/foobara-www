@@ -34,9 +34,9 @@ export default `<span class="nb">require</span> <span class="s2">"foobara/anthro
 <span class="n">goal</span> <span class="o">=</span> <span class="s2">"There is a capybara with a bad year of birth. Can you find and fix the bad record? Thanks!"</span>
 <span class="nb">puts</span> <span class="s2">"To agent: </span><span class="si">#{</span><span class="n">goal</span><span class="si">}</span><span class="s2">"</span>
 <span class="n">outcome</span> <span class="o">=</span> <span class="n">capy_agent</span><span class="p">.</span><span class="nf">accomplish_goal</span><span class="p">(</span><span class="n">goal</span><span class="p">)</span>
-<span class="n">handle_outcome</span><span class="p">(</span><span class="n">outcome</span><span class="p">)</span>
+<span class="nf">handle_outcome</span><span class="p">(</span><span class="n">outcome</span><span class="p">)</span>
 
 <span class="n">goal</span> <span class="o">=</span> <span class="s2">"Thank you so much! Can you set it back so that I can do the demo over again? Thanks!"</span>
 <span class="nb">puts</span> <span class="s2">"To agent: </span><span class="si">#{</span><span class="n">goal</span><span class="si">}</span><span class="s2">"</span>
 <span class="n">outcome</span> <span class="o">=</span> <span class="n">capy_agent</span><span class="p">.</span><span class="nf">accomplish_goal</span><span class="p">(</span><span class="n">goal</span><span class="p">)</span>
-<span class="n">handle_outcome</span><span class="p">(</span><span class="n">outcome</span><span class="p">)</span>`
+<span class="nf">handle_outcome</span><span class="p">(</span><span class="n">outcome</span><span class="p">)</span>`

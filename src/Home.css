@@ -718,6 +718,14 @@ section h2 {
   top: 203px;
 }
 
+.tab-script-link-rails-connector1 {
+  top: 59px;
+}
+
+.tab-project-link-rails-connector1 {
+  top: 106px;
+}
+
 .tab-link > span {
   margin-left: 0.4rem;
   display: inline-block;
