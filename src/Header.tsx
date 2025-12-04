@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Header.css'
-import { FaGithub, FaDiscord, FaYoutube, FaBars, FaTimes } from 'react-icons/fa'
+import { FaGithub, FaDiscord, FaYoutube, FaTwitch, FaBars, FaTimes } from 'react-icons/fa'
 import { SiBluesky } from 'react-icons/si'
 
 const activeClassName = ({ isActive }: { isActive: boolean }) => (isActive ? 'active' : '')
@@ -99,18 +99,23 @@ const Header: React.FC = () => {
             </NavLink>
           </li>
           <li className="header-icon">
-            <a href="https://bsky.app/profile/foob.news" target="_blank" rel="noopener noreferrer">
-              {SiBluesky({ size: 24 })}
-            </a>
-          </li>
-          <li className="header-icon">
             <a href="https://discord.gg/dDpdFAeCHB" target="_blank" rel="noopener noreferrer">
               {FaDiscord({ size: 24 })}
             </a>
           </li>
           <li className="header-icon">
+            <a href="https://www.twitch.tv/milesfoob" target="_blank" rel="noopener noreferrer">
+              {FaTwitch({ size: 24 })}
+            </a>
+          </li>
+          <li className="header-icon">
             <a href="http://youtube.com/@FoobaraFlix" target="_blank" rel="noopener noreferrer">
               {FaYoutube({ size: 24 })}
+            </a>
+          </li>
+          <li className="header-icon">
+            <a href="https://bsky.app/profile/foob.news" target="_blank" rel="noopener noreferrer">
+              {SiBluesky({ size: 24 })}
             </a>
           </li>
           <li className="header-icon">
