@@ -1,3 +1,6 @@
+http://foobara.org/* https://foobara.org/:splat 301!
+http://foobara.com/* https://foobara.org/:splat 301!
 https://foobara.com/* https://foobara.org/:splat 301!
-https://capybarber.com/* https://foobara.org/:splat 301!
+
+# SPA fallback
 /*    /index.html   200
