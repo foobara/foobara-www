@@ -34,12 +34,12 @@ function Contact () {
       <div className="contact-card">
         <div className="contact-info">
           <h3>Email</h3>
-          <p>miles@foobara.com</p>
+          <p>miles@foobara.org</p>
         </div>
 
         <div className="contact-links">
           <a
-            href="mailto:miles@foobara.com"
+            href="mailto:miles@foobara.org"
           >
             Email us!
           </a>

@@ -48,7 +48,7 @@ function HelpFoobara () {
 
         <div className="help-links">
           <a
-            href="mailto:miles@foobara.com"
+            href="mailto:miles@foobara.org"
           >
             Email us
           </a>
