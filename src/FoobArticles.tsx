@@ -1,9 +1,19 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import './Contact.css'
 
 function Community () {
   return (
     <div className="contact-container">
+      <Helmet>
+        <title>FoobArticles - The Foobara Blog</title>
+        <meta name="description" content="Latest articles about topics such as Ruby and Foobara." />
+        <meta property="og:title" content="FoobArticles - The Foobara Blog" />
+        <meta property="og:description" content="Latest articles about topics such as Ruby and Foobara." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://foobara.org/blog" />
+        <link rel="canonical" href="https://foobara.org/blog" />
+      </Helmet>
       <h1 className="contact-header">FoobArticles: The Foobara Blog</h1>
 
       <div className="contact-card">

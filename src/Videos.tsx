@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import './App.css'
 
 function Videos () {
@@ -58,6 +59,15 @@ function Videos () {
 
   return (
     <div className="Videos">
+      <Helmet>
+        <title>Foobara Videos - Tutorials and Demos</title>
+        <meta name="description" content="Watch video tutorials covering various Foobara features, AI agents, MCP connectors, live presentations, and code demos. Learn from real-world examples." />
+        <meta property="og:title" content="Foobara Videos - Tutorials and Demos" />
+        <meta property="og:description" content="Watch video tutorials covering Foobara features, AI agents, MCP connectors, live presentations, and code demos. Learn from real-world examples." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://foobara.org/videos" />
+        <link rel="canonical" href="https://foobara.org/videos" />
+      </Helmet>
       <h1>Foobara Videos</h1>
       <div className="videos-list">
         {videos.map((video) => (

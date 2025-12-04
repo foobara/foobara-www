@@ -1,9 +1,19 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import './HelpFoobara.css'
 
 function HelpFoobara () {
   return (
     <div className="help-container">
+      <Helmet>
+        <title>Help Foobara - Contribute to Open Source</title>
+        <meta name="description" content="Contribute to Foobara! Browse good first issues on GitHub, help with documentation, art, or community building. Perfect for Ruby and TypeScript newcomers." />
+        <meta property="og:title" content="Help Foobara - Contribute to Open Source" />
+        <meta property="og:description" content="Contribute to Foobara! Browse good first issues on GitHub, help with documentation, art, or community building. Perfect for Ruby and TypeScript newcomers." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://foobara.org/help-foobara" />
+        <link rel="canonical" href="https://foobara.org/help-foobara" />
+      </Helmet>
       <h1 className="help-header">Help Foobara!</h1>
 
       <div className="help-card">

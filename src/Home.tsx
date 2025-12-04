@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import './App.css'
 import './Home.css'
 
@@ -9,6 +10,15 @@ import GeneratorsDemo from './Home/Generators/GeneratorsDemo'
 function Home () {
   return (
     <div className="Home">
+      <Helmet>
+        <title>Foobara - Command-Centric and Discoverable Ruby Framework</title>
+        <meta name="description" content="Write domain logic as Foobara commands and automatically get Ruby/TypeScript SDKs. Easily integrate with CLI, HTTP, MCP, AI agents, async job queues, and more." />
+        <meta property="og:title" content="Foobara - Command-Centric and Discoverable Ruby Framework" />
+        <meta property="og:description" content="Write domain logic as Foobara commands and automatically get Ruby/TypeScript SDKs. Easily integrate with CLI, HTTP, MCP, AI agents, async job queues, and more." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://foobara.org/" />
+        <link rel="canonical" href="https://foobara.org/" />
+      </Helmet>
       <section className="hero-section">
         <div className="hero-content">
           <h2>Foobara is the Command-Centric and Discoverable Framework that Abstracts-Away Integration Code!</h2>
