@@ -11,8 +11,10 @@ function Contact () {
         <meta property="og:title" content="Contact Foobara - Get in Touch" />
         <meta property="og:description" content="Have questions about Foobara? Need help or want to contribute? Join us on Discord, email us, or submit issues on GitHub." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://foobara.org/contact" />
-        <link rel="canonical" href="https://foobara.org/contact" />
+        <meta property="og:url" content="https://foobara.org/contact/" />
+        <meta property="og:image" content="https://foobara.org/images/pdcapy.jpg" />
+        <meta property="og:image:alt" content="Foobara framework preview" />
+        <link rel="canonical" href="https://foobara.org/contact/" />
       </Helmet>
       <h1 className="contact-header">Contact Us</h1>
 

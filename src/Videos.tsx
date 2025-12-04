@@ -65,8 +65,10 @@ function Videos () {
         <meta property="og:title" content="Foobara Videos - Tutorials and Demos" />
         <meta property="og:description" content="Watch video tutorials covering Foobara features, AI agents, MCP connectors, live presentations, and code demos. Learn from real-world examples." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://foobara.org/videos" />
-        <link rel="canonical" href="https://foobara.org/videos" />
+        <meta property="og:url" content="https://foobara.org/videos/" />
+        <meta property="og:image" content="https://foobara.org/images/pdcapy.jpg" />
+        <meta property="og:image:alt" content="Foobara framework preview" />
+        <link rel="canonical" href="https://foobara.org/videos/" />
       </Helmet>
       <h1>Foobara Videos</h1>
       <div className="videos-list">

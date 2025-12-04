@@ -11,8 +11,10 @@ function HelpFoobara () {
         <meta property="og:title" content="Help Foobara - Contribute to Open Source" />
         <meta property="og:description" content="Contribute to Foobara! Browse good first issues on GitHub, help with documentation, art, or community building. Perfect for Ruby and TypeScript newcomers." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://foobara.org/help-foobara" />
-        <link rel="canonical" href="https://foobara.org/help-foobara" />
+        <meta property="og:url" content="https://foobara.org/help-foobara/" />
+        <meta property="og:image" content="https://foobara.org/images/pdcapy.jpg" />
+        <meta property="og:image:alt" content="Foobara framework preview" />
+        <link rel="canonical" href="https://foobara.org/help-foobara/" />
       </Helmet>
       <h1 className="help-header">Help Foobara!</h1>
 

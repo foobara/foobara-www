@@ -11,8 +11,10 @@ function Community () {
         <meta property="og:title" content="FoobArticles - The Foobara Blog" />
         <meta property="og:description" content="Latest articles about topics such as Ruby and Foobara." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://foobara.org/blog" />
-        <link rel="canonical" href="https://foobara.org/blog" />
+        <meta property="og:url" content="https://foobara.org/blog/" />
+        <meta property="og:image" content="https://foobara.org/images/pdcapy.jpg" />
+        <meta property="og:image:alt" content="Foobara framework preview" />
+        <link rel="canonical" href="https://foobara.org/blog/" />
       </Helmet>
       <h1 className="contact-header">FoobArticles: The Foobara Blog</h1>
 

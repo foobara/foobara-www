@@ -17,6 +17,8 @@ function Home () {
         <meta property="og:description" content="Write domain logic as Foobara commands and automatically get Ruby/TypeScript SDKs. Easily integrate with CLI, HTTP, MCP, AI agents, async job queues, and more." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://foobara.org/" />
+        <meta property="og:image" content="https://foobara.org/images/pdcapy.jpg" />
+        <meta property="og:image:alt" content="Foobara framework preview" />
         <link rel="canonical" href="https://foobara.org/" />
       </Helmet>
       <section className="hero-section">
