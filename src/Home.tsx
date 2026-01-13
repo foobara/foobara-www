@@ -7,6 +7,7 @@ import SimpleCommandCodeDemo from './Home/SimpleCommandCodeDemo'
 import ConnectorsDemos from './Home/Connectors/ConnectorsDemos'
 import GeneratorsDemo from './Home/Generators/GeneratorsDemo'
 import InteractiveFlowDiagram from './Home/InteractiveFlowDiagram'
+import BeforeAfterComparison from './Home/BeforeAfterComparison'
 
 function Home () {
   return (
@@ -58,6 +59,10 @@ function Home () {
 
       <section className="diagram-section">
         <InteractiveFlowDiagram />
+      </section>
+
+      <section className="comparison-section">
+        <BeforeAfterComparison />
       </section>
 
       <section className="features-section">
