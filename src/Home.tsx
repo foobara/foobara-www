@@ -6,6 +6,7 @@ import './Home.css'
 import SimpleCommandCodeDemo from './Home/SimpleCommandCodeDemo'
 import ConnectorsDemos from './Home/Connectors/ConnectorsDemos'
 import GeneratorsDemo from './Home/Generators/GeneratorsDemo'
+import InteractiveFlowDiagram from './Home/InteractiveFlowDiagram'
 
 function Home () {
   return (
@@ -56,13 +57,7 @@ function Home () {
       </section>
 
       <section className="diagram-section">
-        <div className="diagram-container">
-          <img
-            src="images/cc_plus_discoverable2.jpg"
-            alt="Diagram showing how Foobara combines command-centric approach with discoverability"
-            className="diagram-image"
-          />
-        </div>
+        <InteractiveFlowDiagram />
       </section>
 
       <section className="features-section">
