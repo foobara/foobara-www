@@ -87,6 +87,8 @@
 .cta-button {
   display: inline-block;
   padding: 1rem 1.5rem;
+  min-height: 44px;
+  min-width: 44px;
   background-color: var(--foob-green-dark);
   color: white;
   text-decoration: none;
@@ -986,6 +988,7 @@ section h2 {
 .community-link {
   display: inline-block;
   padding: 0.75rem 1.5rem;
+  min-height: 44px;
   background-color: white;
   color: var(--foob-green-dark);
   text-decoration: none;
@@ -994,6 +997,9 @@ section h2 {
   font-size: 1.1rem;
   border: 2px solid var(--foob-green-dark);
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .community-link:hover {
