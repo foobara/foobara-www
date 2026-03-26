@@ -3,7 +3,16 @@ import { Helmet } from 'react-helmet-async'
 import './App.css'
 
 function Videos () {
+  // Note: these youtube video formats render thumbnails but the shorter ones don't for some reason
   const videos = [
+    {
+      url: 'https://www.youtube.com/watch?v=EICBr7tTlFE',
+      title: 'How to quickly add Foobara as a service-object Layer to an existing Rails app'
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=BCKGvKTk3cU&t=6041s',
+      title: 'Using AI-backed domain logic in Foobara to model and execute business rules'
+    },
     {
       url: 'https://www.youtube.com/watch?v=N5BJfzhL3Ig',
       title: 'Creating two AgentBackedCommands that coordinate and some ' +

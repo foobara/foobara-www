@@ -20,8 +20,16 @@ function Community () {
 
       <div className="contact-card">
         <div className="contact-info">
-          <h3>Latest FoobArticle</h3>
+          <h3>&nbsp;</h3>
           <div className="contact-links">
+            <a
+              href=
+                "https://miles.georgi.foo/quickly-add-foobara-to-an-existing-rails-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              How to Quickly Add Foobara as a Service-Object Layer to an Existing Rails App
+            </a>
             <a
               href=
                 "https://dev.to/foobara/writing-an-ai-agent-in-1-line-of-ruby-code-using-foobaras-agentbackedcommand-m6p"
