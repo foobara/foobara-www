@@ -7,6 +7,9 @@
 
 # testing
 /coverage
+/test-results/
+/playwright-report/
+/playwright/.cache/
 
 # production
 /build
@@ -23,3 +26,4 @@ yarn-debug.log*
 yarn-error.log*
 
 /.idea/
+context_llm.md
