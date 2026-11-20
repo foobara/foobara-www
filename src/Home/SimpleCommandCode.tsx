@@ -1,5 +1,3 @@
-import React from 'react'
-
 import '../syntax.css'
 
 const html = `<span class="k">class</span> <span class="nc">Greet</span> <span class="o">&lt;</span> <span class="no">Foobara</span><span class="o">::</span><span class="no">Command</span>
@@ -27,6 +25,10 @@ const html = `<span class="k">class</span> <span class="nc">Greet</span> <span c
 <span class="nb">puts</span> <span class="n">outcome</span><span class="p">.</span><span class="nf">success?</span> <span class="o">?</span> <span class="n">outcome</span><span class="p">.</span><span class="nf">result</span> <span class="o">:</span> <span class="n">outcome</span><span class="p">.</span><span class="nf">errors_hash</span>
 `
 
-export default function SimpleCommandCode () {
-  return <pre><code dangerouslySetInnerHTML={{ __html: html }} /></pre>
+export default function SimpleCommandCode() {
+  return (
+    <pre>
+      <code dangerouslySetInnerHTML={{ __html: html }} />
+    </pre>
+  )
 }

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { ConnectorDemo, type TabGroup } from '../Connectors/ConnectorDemo'
 
 import GeneratorsRoster from './GeneratorsRoster'
@@ -7,7 +5,7 @@ import Example from './Example'
 
 import '../../Home.css'
 
-export default function GeneratorsDemo () {
+export default function GeneratorsDemo() {
   const tabGroup: TabGroup = {
     integrationId: 'generators',
     integrationName: 'Generators',
@@ -17,9 +15,9 @@ export default function GeneratorsDemo () {
     width: 'medium',
     tabs: [
       { tabId: 'roster', tabLabel: 'Generators', html: GeneratorsRoster },
-      { tabId: 'example', tabLabel: 'Generating Code', html: Example }
-    ]
+      { tabId: 'example', tabLabel: 'Generating Code', html: Example },
+    ],
   }
 
-  return (<ConnectorDemo tabGroup={tabGroup}/>)
+  return <ConnectorDemo tabGroup={tabGroup} />
 }

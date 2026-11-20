@@ -45,56 +45,32 @@ const Header: React.FC = () => {
         </button>
         <ul className={isMenuOpen ? 'nav-menu active' : 'nav-menu'}>
           <li>
-            <NavLink
-            to="/"
-            end
-            onClick={closeMenu}
-            className={activeClassName}>
+            <NavLink to="/" end onClick={closeMenu} className={activeClassName}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink
-            to="/blog"
-            end
-            onClick={closeMenu}
-            className={activeClassName}>
+            <NavLink to="/blog" end onClick={closeMenu} className={activeClassName}>
               FoobArticles
             </NavLink>
           </li>
           <li>
-            <NavLink
-            to="/videos"
-            end
-            onClick={closeMenu}
-            className={activeClassName}>
+            <NavLink to="/videos" end onClick={closeMenu} className={activeClassName}>
               Videos
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/docs"
-              end
-              onClick={closeMenu}
-              className={activeClassName}>
+            <NavLink to="/docs" end onClick={closeMenu} className={activeClassName}>
               Docs
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/help-foobara"
-              end
-              onClick={closeMenu}
-              className={activeClassName}>
+            <NavLink to="/help-foobara" end onClick={closeMenu} className={activeClassName}>
               Help Foobara!
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/contact"
-              end
-              onClick={closeMenu}
-              className={activeClassName}>
+            <NavLink to="/contact" end onClick={closeMenu} className={activeClassName}>
               Contact
             </NavLink>
           </li>

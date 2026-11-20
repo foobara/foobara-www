@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FaGithub, FaYoutube } from 'react-icons/fa'
 
 import '../../Home.css'
@@ -23,7 +23,7 @@ export interface TabInfo {
   html: string
 }
 
-export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
+export function ConnectorDemo({ tabGroup }: { tabGroup: TabGroup }) {
   const startingTab = tabGroup.startingTab ?? 'connector'
   const [activeTabId, setActiveTabId] = useState(startingTab)
 
@@ -49,24 +49,29 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
   const widthClass = tabGroup.width != null ? ` ${tabGroup.width}` : ' wide'
   const containerClasses = `example-container${widthClass}`
 
-  return (<div className="example-with-image">
-    <div className={containerClasses}>
-      <div className="tabs">
-        <div>
-          {tabs.map((tab) => {
-            return (<button
-              key={tab.tabId}
-              className={`tab ${activeTabId === tab.tabId ? 'active' : ''}`}
-              onClick={() => { setActiveTabId(tab.tabId) } }
-            >
-              {tab.tabLabel}
-            </button>)
-          })}
+  return (
+    <div className="example-with-image">
+      <div className={containerClasses}>
+        <div className="tabs">
+          <div>
+            {tabs.map((tab) => {
+              return (
+                <button
+                  key={tab.tabId}
+                  className={`tab ${activeTabId === tab.tabId ? 'active' : ''}`}
+                  onClick={() => {
+                    setActiveTabId(tab.tabId)
+                  }}
+                >
+                  {tab.tabLabel}
+                </button>
+              )
+            })}
+          </div>
         </div>
-      </div>
 
-      <div className="tab-content">
-        {showScriptGithubLink && (
+        <div className="tab-content">
+          {showScriptGithubLink && (
             <a
               href={scriptGithubLink}
               target="_blank"
@@ -75,8 +80,8 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
             >
               This Script on GitHub <span>{FaGithub({ size: 16 })}</span>
             </a>
-        )}
-        {showGithubLink && (
+          )}
+          {showGithubLink && (
             <a
               href={githubLink}
               target="_blank"
@@ -85,8 +90,8 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
             >
               {projectName} on GitHub <span>{FaGithub({ size: 16 })}</span>
             </a>
-        )}
-        {showVideoLink && (
+          )}
+          {showVideoLink && (
             <a
               href={videoLink}
               target="_blank"
@@ -95,30 +100,25 @@ export function ConnectorDemo ({ tabGroup }: { tabGroup: TabGroup }) {
             >
               Watch Video <span>{FaYoutube({ size: 16 })}</span>
             </a>
-        )}
-        <pre><code dangerouslySetInnerHTML={{ __html: activeTab.html }} /></pre>
+          )}
+          <pre>
+            <code dangerouslySetInnerHTML={{ __html: activeTab.html }} />
+          </pre>
+        </div>
       </div>
-    </div>
 
-    {showImage && (
-      <div className="capy-and-dog-image-container">
-        <img
-          src="/images/capy_and_dog.jpg"
-          alt="Capybara and dog"
-          className="capy-and-dog-image"
-        />
-        <div className="meme-text meme-text-foobara">Foobara</div>
-        <div className={classes}>{tabGroup.integrationName}</div>
-        <p className="image-attribution">
-          <a
-            href="https://linktr.ee/darkwingswildlife"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dark Wings Wildlife & Education
-          </a>
-        </p>
-      </div>
-    )}
-  </div>)
+      {showImage && (
+        <div className="capy-and-dog-image-container">
+          <img src="/images/capy_and_dog.jpg" alt="Capybara and dog" className="capy-and-dog-image" />
+          <div className="meme-text meme-text-foobara">Foobara</div>
+          <div className={classes}>{tabGroup.integrationName}</div>
+          <p className="image-attribution">
+            <a href="https://linktr.ee/darkwingswildlife" target="_blank" rel="noopener noreferrer">
+              Dark Wings Wildlife & Education
+            </a>
+          </p>
+        </div>
+      )}
+    </div>
+  )
 }

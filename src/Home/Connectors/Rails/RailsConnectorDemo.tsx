@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { ConnectorDemo, type TabGroup } from '../ConnectorDemo'
 
 import RailsConnectorCode1 from './RailsConnectorCode1'
@@ -10,13 +8,14 @@ import RailsConnectorCodeOutput from './RailsConnectorCodeOutput'
 
 import '../../../Home.css'
 
-export default function RailsConnectorDemo () {
+export default function RailsConnectorDemo() {
   const tabGroup: TabGroup = {
     integrationId: 'rails',
     integrationName: 'Rails Router',
     projectName: 'RailsCommandConnector',
     githubLink: 'https://github.com/foobara/rails-command-connector?tab=readme-ov-file#foobararailscommandconnector',
-    scriptGithubLink: 'https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_5_command_connectors/part_4_rails_connector_router_dsl.rb',
+    scriptGithubLink:
+      'https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_5_command_connectors/part_4_rails_connector_router_dsl.rb',
     startingTab: 'connector2',
     hideLinksOn: ['output'],
     tabs: [
@@ -24,10 +23,9 @@ export default function RailsConnectorDemo () {
       { tabId: 'types', tabLabel: 'Types', html: RailsConnectorCodeTypes },
       { tabId: 'connector1', tabLabel: 'Connector Option', html: RailsConnectorCode1 },
       { tabId: 'connector2', tabLabel: 'Rails Router Option', html: RailsConnectorCode2 },
-      { tabId: 'output', tabLabel: 'Output', html: RailsConnectorCodeOutput }
-    ]
-
+      { tabId: 'output', tabLabel: 'Output', html: RailsConnectorCodeOutput },
+    ],
   }
 
-  return (<ConnectorDemo tabGroup={tabGroup}/>)
+  return <ConnectorDemo tabGroup={tabGroup} />
 }

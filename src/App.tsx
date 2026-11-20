@@ -1,5 +1,3 @@
-import React from 'react'
-// import logo from './logo.svg'
 import { Routes, Route } from 'react-router-dom'
 
 import './App.css'
@@ -13,7 +11,7 @@ import Contact from './Contact'
 import FoobArticles from './FoobArticles'
 import HelpFoobara from './HelpFoobara'
 
-function App () {
+function App() {
   return (
     <div className="App">
       <Header />

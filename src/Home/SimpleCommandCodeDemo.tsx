@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import SimpleCommandCode from './SimpleCommandCode'
 import '../Home.css'
 
-export default function SimpleCommandCodeDemo () {
+export default function SimpleCommandCodeDemo() {
   const [activeTab, setActiveTab] = useState('code')
 
-  return (<div className="example-with-image">
+  return (
+    <div className="example-with-image">
       <div className="baby-capybara-bottle-side">
         <h2>Baby&apos;s First Command!</h2>
         <div className="baby-capybara-bottle-image-container">
@@ -16,20 +17,14 @@ export default function SimpleCommandCodeDemo () {
             className="baby-capybara-bottle-image"
           />
           <p className="image-attribution">
-            <a
-              href="https://commons.wikimedia.org/wiki/User:CaplinRous"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://commons.wikimedia.org/wiki/User:CaplinRous" target="_blank" rel="noopener noreferrer">
               CaplinRous
-            </a> at English Wikipedia,{' '}
-            <a
-              href="https://creativecommons.org/licenses/by-sa/3.0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            </a>{' '}
+            at English Wikipedia,{' '}
+            <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer">
               CC BY-SA 3.0
-            </a>, via Wikimedia Commons
+            </a>
+            , via Wikimedia Commons
           </p>
         </div>
       </div>
@@ -67,17 +62,20 @@ export default function SimpleCommandCodeDemo () {
               View on GitHub →
             </a>
           )}
-          {activeTab === 'code' && (<SimpleCommandCode/>)}
+          {activeTab === 'code' && <SimpleCommandCode />}
 
           {activeTab === 'output' && (
-            <pre><code>{`$ ./greet.rb
+            <pre>
+              <code>{`$ ./greet.rb
 Hello, World!
 Hello, Fumiko!
 Hello, Barbara!
 Hello, Basil!
-$`}</code></pre>
+$`}</code>
+            </pre>
           )}
         </div>
       </div>
-    </div>)
+    </div>
+  )
 }

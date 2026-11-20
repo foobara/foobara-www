@@ -1,15 +1,20 @@
-import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import './HelpFoobara.css'
 
-function HelpFoobara () {
+function HelpFoobara() {
   return (
     <div className="help-container">
       <Helmet>
         <title>Help Foobara - Contribute to Open Source</title>
-        <meta name="description" content="Contribute to Foobara! Browse good first issues on GitHub, help with documentation, art, or community building. Perfect for Ruby and TypeScript newcomers." />
+        <meta
+          name="description"
+          content="Contribute to Foobara! Browse good first issues on GitHub, help with documentation, art, or community building. Perfect for Ruby and TypeScript newcomers."
+        />
         <meta property="og:title" content="Help Foobara - Contribute to Open Source" />
-        <meta property="og:description" content="Contribute to Foobara! Browse good first issues on GitHub, help with documentation, art, or community building. Perfect for Ruby and TypeScript newcomers." />
+        <meta
+          property="og:description"
+          content="Contribute to Foobara! Browse good first issues on GitHub, help with documentation, art, or community building. Perfect for Ruby and TypeScript newcomers."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://foobara.org/help-foobara/" />
         <meta property="og:image" content="https://foobara.org/images/pdcapy.jpg" />
@@ -21,14 +26,11 @@ function HelpFoobara () {
       <div className="help-card">
         <div className="help-info">
           <h3>Interested in Making Code Contributions to an Open-Source Project?</h3>
+          <p>Want to help build Foobara while gaining experience with developer tools?</p>
           <p>
-            Want to help build Foobara while gaining experience with developer tools?
-          </p>
-          <p>
-            We have a collection of &quot;good first issue&quot; tasks perfect for newcomers,
-            including Ruby/TypeScript newcomers!. These issues are
-            great opportunities to learn, contribute, and grow your skills!
-            If you need help or get stuck please reach out by email or on Discord!
+            We have a collection of &quot;good first issue&quot; tasks perfect for newcomers, including Ruby/TypeScript
+            newcomers!. These issues are great opportunities to learn, contribute, and grow your skills! If you need
+            help or get stuck please reach out by email or on Discord!
           </p>
         </div>
 
@@ -46,29 +48,17 @@ function HelpFoobara () {
       <div className="help-card">
         <div className="help-info">
           <h3>Other Ways to Help</h3>
+          <p>Using Foobara and filing GitHub issues to report bugs or usability issues would be super helpful!</p>
+          <p>We also need help with art, documentation/tutorials, and community-building!</p>
           <p>
-            Using Foobara and filing GitHub issues to report bugs or usability issues would be super helpful!
-          </p>
-          <p>
-            We also need help with art, documentation/tutorials, and community-building!
-          </p>
-          <p>
-            If you&apos;re interested in contributing in these areas, please reach out by email or on Discord.
-            We&apos;d love to hear from you!
+            If you&apos;re interested in contributing in these areas, please reach out by email or on Discord. We&apos;d
+            love to hear from you!
           </p>
         </div>
 
         <div className="help-links">
-          <a
-            href="mailto:miles@foobara.org"
-          >
-            Email us
-          </a>
-          <a
-            href="https://discord.gg/dDpdFAeCHB"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="mailto:miles@foobara.org">Email us</a>
+          <a href="https://discord.gg/dDpdFAeCHB" target="_blank" rel="noopener noreferrer">
             Find us on Discord
           </a>
         </div>

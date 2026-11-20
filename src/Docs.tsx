@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
-// import logo from './logo.svg'
+import { useEffect, useState } from 'react'
 
 import './App.css'
 
-function Docs () {
+function Docs() {
   const [versionData, setVersionData] = useState<undefined | Record<string, string[]>>()
   const [error, setError] = useState<any>(null)
 
@@ -23,29 +22,36 @@ function Docs () {
     }
 
     fetchData()
-  })
+  }, [])
 
   return (
     <div className="Docs">
       <div>
-        <h1>All Foobara gem docs in one place:</h1>
-        (<a href="https://docs.foobara.org/all">All latest gems together</a>)
+        <h1>All Foobara gem docs in one place:</h1>(<a href="https://docs.foobara.org/all">All latest gems together</a>)
       </div>
       <h1>Per-gem docs:</h1>
-      {versionData != null && Object.entries(versionData).map(([gemName, versions]) => (
-        <div key={gemName}>
-          <h3>{gemName} ({versions.map((version, index) => {
-            const href: string = `https://docs.foobara.org/gems/${gemName}/${version}`
-            const element = <a key={index} href={href}>{version}</a>
-            if (index === versions.length - 1) {
-              return element
-            } else {
-              return [element, ', ']
-            }
-          })})
-          </h3>
-        </div>
-      ))}
+      {versionData != null &&
+        Object.entries(versionData).map(([gemName, versions]) => (
+          <div key={gemName}>
+            <h3>
+              {gemName} (
+              {versions.map((version, index) => {
+                const href: string = `https://docs.foobara.org/gems/${gemName}/${version}`
+                const element = (
+                  <a key={index} href={href}>
+                    {version}
+                  </a>
+                )
+                if (index === versions.length - 1) {
+                  return element
+                } else {
+                  return [element, ', ']
+                }
+              })}
+              )
+            </h3>
+          </div>
+        ))}
       <div>{error != null && JSON.stringify(error)}</div>
     </div>
   )

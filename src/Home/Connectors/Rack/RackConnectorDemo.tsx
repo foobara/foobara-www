@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { ConnectorDemo, type TabGroup } from '../ConnectorDemo'
 
 import RackConnectorCodeCommands from '../Rack/RackConnectorCodeCommands'
@@ -8,7 +6,7 @@ import RackConnectorCodeOutput from '../Rack/RackConnectorCodeOutput'
 
 import '../../../Home.css'
 
-export default function RackConnectorDemo () {
+export default function RackConnectorDemo() {
   const tabGroup: TabGroup = {
     integrationId: 'rack',
     integrationName: 'Rack',
@@ -18,9 +16,9 @@ export default function RackConnectorDemo () {
     tabs: [
       { tabId: 'commands', tabLabel: 'Commands', html: RackConnectorCodeCommands },
       { tabId: 'connector', tabLabel: 'Rack Connector', html: RackConnectorCode },
-      { tabId: 'output', tabLabel: 'Output', html: RackConnectorCodeOutput }
-    ]
+      { tabId: 'output', tabLabel: 'Output', html: RackConnectorCodeOutput },
+    ],
   }
 
-  return (<ConnectorDemo tabGroup={tabGroup}/>)
+  return <ConnectorDemo tabGroup={tabGroup} />
 }

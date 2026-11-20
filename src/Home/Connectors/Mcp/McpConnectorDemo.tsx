@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { ConnectorDemo, type TabGroup } from '../ConnectorDemo'
 
 import McpConnectorCodeCommands from './McpConnectorCodeCommands'
@@ -10,12 +8,13 @@ import McpConnectorCodeOutput from './McpConnectorCodeOutput'
 
 import '../../../Home.css'
 
-export default function McpConnectorDemo () {
+export default function McpConnectorDemo() {
   const tabGroup: TabGroup = {
     integrationId: 'mcp',
     integrationName: 'MCP',
     projectName: 'McpConnector',
-    scriptGithubLink: 'https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_5_command_connectors/part_7_mcp_connector.rb',
+    scriptGithubLink:
+      'https://github.com/foobara/examples/blob/main/v1_foobara_101/chapter_5_command_connectors/part_7_mcp_connector.rb',
     githubLink: 'https://github.com/foobara/mcp-connector?tab=readme-ov-file#foobaramcpconnector',
     videoLink: 'https://www.youtube.com/watch?v=_w3ZHdiJEGU',
     hideLinksOn: ['setup'],
@@ -24,9 +23,9 @@ export default function McpConnectorDemo () {
       { tabId: 'types', tabLabel: 'Types', html: McpConnectorCodeTypes },
       { tabId: 'setup', tabLabel: 'Setup', html: McpConnectorCodeSetup },
       { tabId: 'connector', tabLabel: 'MCP Connector', html: McpConnectorCode },
-      { tabId: 'output', tabLabel: 'Output', html: McpConnectorCodeOutput }
-    ]
+      { tabId: 'output', tabLabel: 'Output', html: McpConnectorCodeOutput },
+    ],
   }
 
-  return (<ConnectorDemo tabGroup={tabGroup}/>)
+  return <ConnectorDemo tabGroup={tabGroup} />
 }

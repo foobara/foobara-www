@@ -1,8 +1,7 @@
-import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import './Contact.css'
 
-function Community () {
+function Community() {
   return (
     <div className="contact-container">
       <Helmet>
@@ -23,24 +22,21 @@ function Community () {
           <h3>&nbsp;</h3>
           <div className="contact-links">
             <a
-              href=
-                "https://miles.georgi.foo/quickly-add-foobara-to-an-existing-rails-app"
+              href="https://miles.georgi.foo/quickly-add-foobara-to-an-existing-rails-app"
               target="_blank"
               rel="noopener noreferrer"
             >
               How to Quickly Add Foobara as a Service-Object Layer to an Existing Rails App
             </a>
             <a
-              href=
-                "https://dev.to/foobara/writing-an-ai-agent-in-1-line-of-ruby-code-using-foobaras-agentbackedcommand-m6p"
+              href="https://dev.to/foobara/writing-an-ai-agent-in-1-line-of-ruby-code-using-foobaras-agentbackedcommand-m6p"
               target="_blank"
               rel="noopener noreferrer"
             >
               Writing an AI Agent in 1 Line of Ruby Code Using Foobara::AgentBackedCommand
             </a>
             <a
-              href=
-                "https://medium.com/@foobarticles/creating-an-ai-agent-with-the-foobara-agent-cli-ruby-gem-4f8e0280983f"
+              href="https://medium.com/@foobarticles/creating-an-ai-agent-with-the-foobara-agent-cli-ruby-gem-4f8e0280983f"
               target="_blank"
               rel="noopener noreferrer"
             >
