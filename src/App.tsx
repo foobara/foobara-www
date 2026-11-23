@@ -10,6 +10,7 @@ import Videos from './Videos'
 import Contact from './Contact'
 import FoobArticles from './FoobArticles'
 import HelpFoobara from './HelpFoobara'
+import NotFound from './NotFound'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<FoobArticles />} />
         <Route path="/colors" element={<Colors />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

@@ -8,7 +8,14 @@ import { getRoutePaths } from './routes.ts'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const projectRoot = resolve(__dirname, '..')
-const routes = getRoutePaths()
+
+// /blog -> blog/index.html so that both /blog and /blog/ are served the pre-rendered page
+const pages = getRoutePaths().map((route) => ({
+  route,
+  outputPath: route === '/' ? 'index.html' : `${route.replace(/^\//, '')}/index.html`,
+}))
+
+pages.push({ route: '/404', outputPath: '404.html' })
 
 const server = await preview({ root: projectRoot })
 const outDir = resolve(projectRoot, server.config.build.outDir)
@@ -21,7 +28,7 @@ const browser = await puppeteer.launch({
 // Render everything before writing anything to deal with / prerendering
 const rendered: { route: string; outputPath: string; html: string }[] = []
 
-for (const route of routes) {
+for (const { route, outputPath } of pages) {
   const page = await browser.newPage()
 
   await page.evaluateOnNewDocument(() => {
@@ -49,8 +56,6 @@ for (const route of routes) {
     }
   })
 
-  // /blog -> blog/index.html so that both /blog and /blog/ are served the pre-rendered page
-  const outputPath = route === '/' ? 'index.html' : `${route.replace(/^\//, '')}/index.html`
   rendered.push({ route, outputPath, html: await page.content() })
 
   await page.close()

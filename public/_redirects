@@ -2,5 +2,6 @@ http://foobara.org/* https://foobara.org/:splat 301!
 http://foobara.com/* https://foobara.org/:splat 301!
 https://foobara.com/* https://foobara.org/:splat 301!
 
-# SPA fallback
-/*    /index.html   200
+# SPA routes that are not pre-rendered:
+/docs      /index.html   200
+/colors    /index.html   200
